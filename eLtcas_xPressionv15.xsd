@@ -1,0 +1,2754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 sp1 (http://www.altova.com) by Durga Kunapareddy (private) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Documents">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ArchivingDetails">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Case360ImportPath" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CostOfCare" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Year" type="xs:string"/>
+							<xs:element name="Zip" type="xs:string"/>
+							<xs:element name="State" type="xs:string"/>
+							<xs:element name="DailyNursingHome" type="xs:string"/>
+							<xs:element name="DailyAssistedLiving" type="xs:string"/>
+							<xs:element name="DailyHomeCare" type="xs:string"/>
+							<xs:element name="HourlyHomeCare" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Benefit">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PoolNumber" type="xs:int"/>
+							<xs:element name="SBPAreaPrintTag" type="xs:string"/>
+							<xs:element name="SBPAreaPrintText" type="xs:string"/>
+							<xs:element name="SBPOrder" type="xs:int"/>
+							<xs:element name="SBPDescription" type="xs:string"/>
+							<xs:element name="SBPAmount" type="xs:string"/>
+							<xs:element name="TypeCode" type="xs:int"/>
+							<xs:element name="Frequency" type="xs:string"/>
+							<xs:element name="AmountType" type="xs:string"/>
+							<xs:element name="OptionReference" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_RBO_LTM">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="AmountUninflated" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_RBO_CS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="AmountUninflated" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+													</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_RBO_DBA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="AmountUninflated" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_RBO_LANDINGSPOT">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="AmountUninflated" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_RBO_INFLDROP">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="AmountUninflated" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_RBO_EP">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="AmountUninflated" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_OR_RBO_LTM">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="OptionReference" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_OR_RBO_CS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="OptionReference" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+													</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_OR_RBO_DBA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="OptionReference" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_OR_RBO_LANDINGSPOT">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="OptionReference" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_OR_RBO_INFLDROP">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="OptionReference" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation1_OR_RBO_EP">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="OptionReference" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation2">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="AmountUninflated" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Order" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Presentation3">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="AmountUninflated" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Order" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Resol_Coverage_Presentation">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="OptionReference" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="Tag_Value" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="OfferCoverage_OfferOrder">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="Type" type="xs:string"/>
+							<xs:element name="Amount" type="xs:string"/>
+							<xs:element name="OfferOrder" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="Resol_Coverage_BenefitPool">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="FacilityMDBDescription" type="xs:string"/>
+							<xs:element name="HomeCareMDBDescription" type="xs:string"/>
+							<xs:element name="MaxBenefitDescription" type="xs:string"/>
+							<xs:element name="EPDescription" type="xs:string"/>
+							<xs:element name="BenefitInflationDescription" type="xs:string"/>
+							<xs:element name="PoolTypeCode" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Resol_OfferCoverage_BenefitPool">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="FacilityMDBDescription" type="xs:string"/>
+							<xs:element name="HomeCareMDBDescription" type="xs:string"/>
+							<xs:element name="MaxBenefitDescription" type="xs:string"/>
+							<xs:element name="EPDescription" type="xs:string"/>
+							<xs:element name="BenefitInflationDescription" type="xs:string"/>
+							<xs:element name="PoolTypeCode" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Resol_OfferCoverage_Payer">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="ModalType" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Resol_OfferCoverage_PremiumGrouping">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="ModalPremium" type="xs:string"/>
+							<xs:element name="AnnualizedPremium" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Tags">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="Tag" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Unit">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PolicyNumber" type="xs:string"/>
+							<xs:element name="UnitGroupingName" type="xs:string"/>
+							<xs:element name="ProductType" type="xs:string"/>
+							<xs:element name="ProductTypeCode" type="xs:string"/>
+							<xs:element name="Description" type="xs:string"/>
+							<xs:element name="Reference" type="xs:string"/>
+							<xs:element name="ModalPremium" type="xs:decimal"/>
+							<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="xPressionForm">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Configuration">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PolicyNumber" type="xs:string"/>
+										<xs:element name="Carrier" type="xs:string"/>
+										<xs:element name="CarrierId" type="xs:int"/>
+										<xs:element name="DomainEvent" type="xs:string"/>
+										<xs:element name="Module" type="xs:string"/>
+										<xs:element name="DecisionStart" type="xs:string"/>
+										<xs:element name="DecisionEnd" type="xs:string"/>
+										<xs:element name="DecisionVersion" type="xs:string"/>
+										<xs:element name="DebugMode" type="xs:boolean"/>
+										<xs:element name="EventValues" type="EventValues"/>
+										<xs:element name="BusinessArea" type="xs:string"/>
+										<xs:element name="LetterWriterName" type="xs:string"/>
+										<xs:element name="LetterWriterDesignation" type="xs:string"/>
+										<xs:element name="LetterWriterTitle" type="xs:string"/>.
+										<xs:element name="PrintLocation" type="xs:string"/>
+										<xs:element name="PrintServer" type="xs:string"/>
+										<xs:element name="PrinterName" type="xs:string"/>
+										<xs:element name="RequestGuid" type="xs:string"/>
+										<xs:element name="RequestDate" type="xs:dateTime"/>
+										<xs:element name="SubFolder" type="xs:string"/>
+										<xs:element name="DocumentType" type="xs:string"/>
+										<xs:element name="CarrierName" type="xs:string"/>
+										<xs:element name="DatabaseName" type="xs:string"/>
+										<xs:element name="ServerName" type="xs:string"/>
+										<xs:element name="UserId" type="xs:string"/>
+										<xs:element name="LetterDisplayName" type="xs:string"/>
+										<xs:element name="UserTitle" type="xs:string"/>
+										<xs:element name="UserDesignation" type="xs:string"/>
+										<xs:element name="LetterWriterPhoneNumber" type="xs:string"/>
+										<xs:element name="EnvironmentType" type="xs:string"/>
+										<xs:element name="OutputType" type="xs:string"/>
+										<xs:element name="ReferenceTrackingGuid" type="xs:string"/>
+										<xs:element name="ArchivingDetails" type="ArchivingDetails"/>
+										<xs:element name="CodeStream" type="xs:string"/>
+										<xs:element name="PreviewLocation" type="xs:string"/>
+										<xs:element name="ResolicitationNumber" type="xs:int"/>
+										<xs:element name="ResolicitationBatchNumber" type="xs:int"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Life">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PolicyNumber" type="xs:string"/>
+										<xs:element name="LifeId" type="xs:int"/>
+										<xs:element name="Salutation" type="xs:string"/>
+										<xs:element name="FirstName" type="xs:string"/>
+										<xs:element name="MiddleInitial" type="xs:string"/>
+										<xs:element name="LastName" type="xs:string"/>
+										<xs:element name="Address1" type="xs:string"/>
+										<xs:element name="Address2" type="xs:string"/>
+										<xs:element name="City" type="xs:string"/>
+										<xs:element name="State" type="xs:string"/>
+										<xs:element name="ZipCode" type="xs:string"/>
+										<xs:element name="BirthDate" type="xs:date"/>
+										<xs:element name="OldBirthDate" nillable="true" type="xs:dateTime"/>
+										<xs:element name="DeathDate" type="xs:date"/>
+										<xs:element name="AttainedAge" type="xs:int"/>
+										<xs:element name="SpouseLifeId" nillable="true" type="xs:int"/>
+										<xs:element name="County" type="xs:string"/>
+										<xs:element name="HomePhone" type="xs:string"/>
+										<xs:element name="OfficePhone" type="xs:string"/>
+										<xs:element name="Email" type="xs:string"/>
+										<xs:element name="SexDescription" type="xs:string"/>
+										<xs:element name="MaritalStatus" type="xs:string"/>
+										<xs:element name="MaskedSsn" type="xs:string"/>
+										<xs:element name="InternationalLine1" type="xs:string"/>
+										<xs:element name="InternationalLine2" type="xs:string"/>
+										<xs:element name="InternationalLine3" type="xs:string"/>
+										<xs:element name="InternationalLine4" type="xs:string"/>
+										<xs:element name="InternationalLine5" type="xs:string"/>
+										<xs:element name="InternationalLine6" type="xs:string"/>
+										<xs:element name="InternationalLine7" type="xs:string" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="InternationalStyleCode" type="xs:string"/>
+										<xs:element name="OtherCoverages">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="OtherCoverage" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+															    <xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="CarrierName" type="xs:string"/>
+																<xs:element name="CarrierAddressLine1" type="xs:string"/>
+																<xs:element name="CarrierAddressLine2" type="xs:string"/>
+																<xs:element name="CarrierCity" type="xs:string"/>
+																<xs:element name="CarrierState" type="xs:string"/>
+																<xs:element name="CarrierZipCode" type="xs:string"/>
+																<xs:element name="Policy_Number" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+										</xs:complexType>
+									 </xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="capture">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PolicyNumber" type="xs:string"/>
+										<xs:element name="LIFE_ID" type="xs:string"/>
+										<xs:element name="POLICY_NO" type="xs:string"/>
+										<xs:element name="RECEIVED_DT" type="xs:string"/>
+										<xs:element name="CLIENT_NAME" type="xs:string"/>
+										<xs:element name="DOC_TYPE" type="xs:string"/>
+										<xs:element name="SUBFOLDER" type="xs:string"/>
+										<xs:element name="LETTER_ID" type="xs:string"/>
+										<xs:element name="LETTER_DESC" type="xs:string"/>
+										<xs:element name="ELTCAS_PACKET_GUID" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="RequestForBenefit" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PolicyNumber" type="xs:string"/>
+										<xs:element name="RequestForBenefitId" type="xs:unsignedInt"/>
+										<xs:element name="SeriesId" type="xs:int"/>
+										<xs:element name="CertNo" type="xs:string"/>
+										<xs:element name="OriginalDesigneeId" type="xs:int" minOccurs="0"/>
+										<xs:element name="OriginalDesigneeName" type="xs:string"/>
+										<xs:element name="CurrentDesigneeId" type="xs:int" minOccurs="0"/>
+										<xs:element name="CurrentDesigneeName" type="xs:string"/>
+										<xs:element name="CurrentUserId" type="xs:string"/>
+										<xs:element name="LetterDisplayName" type="xs:string"/>
+										<xs:element name="UserTitle" type="xs:string"/>
+										<xs:element name="UserDesignation" type="xs:string"/>
+										<xs:element name="UserPhoneNumber" type="xs:string"/>
+										<xs:element name="RecissionUserId" type="xs:string" minOccurs="0"/>
+										<xs:element name="RequestForBenefitStatusCode" type="xs:int"/>
+										<xs:element name="RequestForBenefitStatusDescription" type="xs:string"/>
+										<xs:element name="EnteredDate" type="xs:dateTime"/>
+										<xs:element name="StatisticalStartDate" type="xs:dateTime" minOccurs="0"/>
+										<xs:element name="StatisticalEndDate" type="xs:dateTime" minOccurs="0"/>
+										<xs:element name="InitialInquiryDate" type="xs:dateTime"/>
+										<xs:element name="ClaimPacketSentDate" type="xs:dateTime"/>
+										<xs:element name="ClaimFormReceiptDate" type="xs:dateTime"/>
+										<xs:element name="RecissionReviewDate" type="xs:dateTime"/>
+										<xs:element name="DisablingEventIcdId" type="xs:int" minOccurs="0"/>
+										<xs:element name="DisablingEventIcdDescription" type="xs:string"/>
+										<xs:element name="PrimaryDiagnosisIcdId" type="xs:int" minOccurs="0"/>
+										<xs:element name="PrimaryDiagnosisIcdDescription" type="xs:string"/>
+										<xs:element name="ClaimStatusDescription" type="xs:string" minOccurs="0"/>
+										<xs:element name="ClaimStatusReasonDescription" type="xs:string" minOccurs="0"/>
+										<xs:element name="EpisodeOfBenefitDetails">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="EpisodeOfBenefit" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="EpisodeOfBenefitId" type="xs:int"/>
+																<xs:element name="RequestForBenefitId" type="xs:int"/>
+																<xs:element name="EpisodeOfBenefitStatusDescription" type="xs:string"/>
+																<xs:element name="EpisodeOfBenefitStatusReasonDescription" type="xs:string"/>
+																<xs:element name="AssignedToUserId" type="xs:string"/>
+																<xs:element name="CreatedDate" type="xs:dateTime"/>
+																<xs:element name="DecisionDate" type="xs:dateTime"/>
+																<xs:element name="StartDate" type="xs:dateTime"/>
+																<xs:element name="EndDate" type="xs:dateTime"/>
+																<xs:element name="ReassessmentDate" type="xs:dateTime"/>
+																<xs:element name="RevocationDate" type="xs:dateTime" minOccurs="0"/>
+																<xs:element name="LastExtensionDate" type="xs:dateTime" minOccurs="0"/>
+																<xs:element name="ReconsiderationAppealDescription" type="xs:string" minOccurs="0"/>
+																<xs:element name="ReconsiderationAppealTypeCode" type="xs:string"/>
+																<xs:element name="ReconsiderationAppealLetterReceivedDate" type="xs:dateTime" minOccurs="0"/>
+																<xs:element name="ReviewerUserId" type="xs:string" minOccurs="0"/>
+																<xs:element name="EpisodeOfBenefitStatusReason" type="xs:string"/>
+																<xs:element name="LivingArrangementCode" type="xs:string"/>
+																<xs:element name="MedicationSummary" type="xs:string"/>
+																<xs:element name="ConclusionComment" type="xs:string"/>
+																<xs:element name="LastUpdatedDate" type="xs:dateTime"/>
+																<xs:element name="LastUpdatedBy" type="xs:string"/>
+																<xs:element name="QualifyingCognitiveImpairment" type="xs:string"/>
+																<xs:element name="AdlAmbulationCode" type="xs:string"/>
+																<xs:element name="AdlBathingCode" type="xs:string"/>
+																<xs:element name="AdlDressingCode" type="xs:string"/>
+																<xs:element name="AdlFeedingCode" type="xs:string"/>
+																<xs:element name="AdlContinenceCode" type="xs:string"/>
+																<xs:element name="AdlToiletingCode" type="xs:string"/>
+																<xs:element name="AdlTransferringCode" type="xs:string"/>
+																<xs:element name="WoundCareCode" type="xs:string"/>
+																<xs:element name="MedicalDeviceAssistanceCode" type="xs:string"/>
+																<xs:element name="VentilatorDependentCode" type="xs:string"/>
+																<xs:element name="InjectionAssistanceBloodDrawCode" type="xs:string"/>
+																<xs:element name="DiabetiesManagementCode" type="xs:string"/>
+																<xs:element name="PrescribedDietCode" type="xs:string"/>
+																<xs:element name="MedicationManagementCode" type="xs:string"/>
+																<xs:element name="OtherMedicalNecessityCode" type="xs:string"/>
+																<xs:element name="AdlMedicationCode" type="xs:string"/>
+																<xs:element name="SkilledNursingCode" type="xs:string"/>
+																<xs:element name="EpisodeOfBenefitAdditionalInformationLastUpdatedDate" type="xs:dateTime"/>
+																<xs:element name="EpisodeOfBenefitAdditionalInformationLastUpdatedBy" type="xs:string"/>
+																<xs:element name="BenefitAssessmentDetails" minOccurs="0">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="BenefitAssessment" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="BenefitAssessmentId" type="xs:int" minOccurs="0"/>
+																						<xs:element name="BenefitAssessmentCode" type="xs:int" minOccurs="0"/>
+																						<xs:element name="BenefitAssessmentCodeDescription" type="xs:string" minOccurs="0"/>
+																						<xs:element name="VendorId" type="xs:int" minOccurs="0"/>
+																						<xs:element name="VendorDescription" type="xs:string" minOccurs="0"/>
+																						<xs:element name="CareProviderId" type="xs:int" minOccurs="0"/>
+																						<xs:element name="CareProviderName" type="xs:string" minOccurs="0"/>
+																						<xs:element name="BenefitAssessmentType" type="xs:string" minOccurs="0"/>
+																						<xs:element name="CreatedDate" type="xs:dateTime" minOccurs="0"/>
+																						<xs:element name="OrderedDate" type="xs:dateTime" minOccurs="0"/>
+																						<xs:element name="ReceivedDate" type="xs:dateTime" minOccurs="0"/>
+																						<xs:element name="CanceledFlag" type="xs:boolean" minOccurs="0"/>
+																						<xs:element name="CanceledDate" type="xs:dateTime" minOccurs="0"/>
+																						<xs:element name="VendorOrderNumber" type="xs:string" minOccurs="0"/>
+																						<xs:element name="IadlOtherComment" type="xs:string" minOccurs="0"/>
+																						<xs:element name="FormalDementiaDiagnosisCode" type="xs:string" minOccurs="0"/>
+																						<xs:element name="FormalDementiaDiagnosisDescription" type="xs:string" minOccurs="0"/>
+																						<xs:element name="FormalDementiaDiagnosisDate" type="xs:string" minOccurs="0"/>
+																						<xs:element name="CurrentCognitiveMedications" type="xs:string" minOccurs="0"/>
+																						<xs:element name="LastCognitiveTestCode" type="xs:string" minOccurs="0"/>
+																						<xs:element name="LastCognitiveTestDescription" type="xs:string" minOccurs="0"/>
+																						<xs:element name="MedicalNecessityDetails" minOccurs="0">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="MedicalNecessity">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PolicyNumber" type="xs:string"/>
+																												<xs:element name="MedicalNecessityCode" type="xs:int" minOccurs="0"/>
+																												<xs:element name="MedicalNecessityDescription" type="xs:string"/>
+																												<xs:element name="EligibilityConditionMetDescription" type="xs:string"/>
+																												<xs:element name="CheckValueCode" type="xs:int" minOccurs="0"/>
+																												<xs:element name="MedicalNecessityFrequencyCode" type="xs:int" minOccurs="0"/>
+																												<xs:element name="Comment" type="xs:string" minOccurs="0"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="CognitiveImpairmentDetails" minOccurs="0">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="CognitiveImpairment" minOccurs="0">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PolicyNumber" type="xs:string"/>
+																												<xs:element name="CognitiveImpairmentCode" type="xs:int" minOccurs="0"/>
+																												<xs:element name="CognitiveImpairmentDescription" type="xs:string" minOccurs="0"/>
+																												<xs:element name="BehaviorPresentDescription" type="xs:string"/>
+																												<xs:element name="CheckValueCode" type="xs:int" minOccurs="0"/>
+																												<xs:element name="Comment" type="xs:string" minOccurs="0"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="ActivityOfDailyLivingDetails" minOccurs="0">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="ActivityOfDailyLiving" minOccurs="0" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PolicyNumber" type="xs:string"/>
+																												<xs:element name="ActivityOfDailyLivingCode" type="xs:int"/>
+																												<xs:element name="ActivityOfDailyLivingDescription" type="xs:string"/>
+																												<xs:element name="AdlAssistanceLevelCode" type="xs:int"/>
+																												<xs:element name="AdlAssistanceLevelDescription" type="xs:string"/>
+																												<xs:element name="AdlAssistanceFrequencyCode" type="xs:int"/>
+																												<xs:element name="AdlAssistanceFrequencyDescription" type="xs:string"/>
+																												<xs:element name="AdlAssistByCode" type="xs:int"/>
+																												<xs:element name="AdlAssistByDescription" type="xs:string"/>
+																												<xs:element name="EligibilityConditionMetDescription" type="xs:string"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="InstrumentalActivityOfDailyLivingDetails" minOccurs="0">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="InstrumentalActivityOfDailyLiving" minOccurs="0" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PolicyNumber" type="xs:string"/>
+																												<xs:element name="InstrumentalActivityOfDailyLivingCode" type="xs:int"/>
+																												<xs:element name="InstrumentalActivityOfDailyLivingDescription" type="xs:string"/>
+																												<xs:element name="IadlAssistanceLevelCode" type="xs:int"/>
+																												<xs:element name="Comment" type="xs:string"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="BenefitAssessmentRequestInformationDetails" minOccurs="0">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="BenefitAssessmentRequestInformation" minOccurs="0" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PolicyNumber" type="xs:string"/>
+																												<xs:element name="BenefitAssessmentRequestInformationId" type="xs:int" minOccurs="0"/>
+																												<xs:element name="BenefitAssessmentId" type="xs:int" minOccurs="0"/>
+																												<xs:element name="CareProviderId" type="xs:int" minOccurs="0"/>
+																												<xs:element name="SpecialInstructions" type="xs:string" minOccurs="0"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="Consults">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="CaseConsultDetailsDto" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="ConsultId" type="xs:integer"/>
+																						<xs:element name="CurrentClaimStatus" type="xs:string"/>
+																						<xs:element name="ConsultTypeCode" type="xs:string"/>
+																						<xs:element name="ConsultTypeDisplayText" type="xs:string"/>
+																						<xs:element name="Title" type="xs:string"/>
+																						<xs:element name="ConsultClassificationCode" type="xs:string"/>
+																						<xs:element name="ConsultClassificationDisplayText" type="xs:string"/>
+																						<xs:element name="ConsultStatusCode" type="xs:string"/>
+																						<xs:element name="ConsultStatusCodeDisplayText" type="xs:string"/>
+																						<xs:element name="ConsultNotes">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="ConsultNote" minOccurs="0" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="ConsultDetailId" type="xs:integer"/>
+																												<xs:element name="UserId" type="xs:string"/>
+																												<xs:element name="Notes" type="xs:string"/>
+																												<xs:element name="NoteDate" type="xs:dateTime"/>
+																												<xs:element name="DoesConsultantAgree" type="xs:string"/>
+																												<xs:element name="IsFurtherActionRequired" type="xs:string"/>
+																												<xs:element name="ConsultFurtherActionRequiredCode" type="xs:string"/>
+																												<xs:element name="ConsultFurtherActionRequiredOther" type="xs:string"/>
+																												<xs:element name="ConsultFurtherActionRequiredDisplayText" type="xs:string"/>
+																												<xs:element name="FurtherActionCompleteDisplayText" type="xs:string"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="ExistingConsultInfoForEOB">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="EOBConsultInfo" minOccurs="0" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="ConsultId" type="xs:integer"/>
+																												<xs:element name="ConsultTypeCode" type="xs:string"/>
+																												<xs:element name="ConsultStatusCode" type="xs:string"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="CurrentClaimOwner" type="xs:string"/>
+																						<xs:element name="LastUpdatedBy" type="xs:string"/>
+																						<xs:element name="LastUpdatedDate" type="xs:dateTime"/>
+																						<xs:element name="DidFurtherActionChangeRecommendationCode" type="xs:string"/>
+																						<xs:element name="WasDecisionApprovedInError" type="xs:string"/>
+																						<xs:element name="DoesDecisionMakerAgree" type="xs:string"/>
+																						<xs:element name="ConsultActionChangeRecommendationCode" type="xs:string"/>
+																						<xs:element name="ConsultClassificationOther" type="xs:string"/>
+																						<xs:element name="CreatedDate" type="xs:dateTime"/>
+																						<xs:element name="CancelNotes" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="PlanOfCares">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="PlanOfCare" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="PlanOfCareId" type="xs:integer"/>
+																						<xs:element name="EpisodeOfBenefitId" type="xs:integer"/>
+																						<xs:element name="PlanOfCareAdditionalPolicies" type="xs:string"/>
+																						<xs:element name="SpousesInClaim" type="xs:integer"/>
+																						<xs:element name="BenefitEligibilityAssessmentContactName" type="xs:string"/>
+																						<xs:element name="BenefitEligibilityAssessmentContactPhone" type="xs:string"/>
+																						<xs:element name="PlanOfCareTypeCode" type="xs:integer"/>
+																						<xs:element name="PlanOfCareReasonStatus" type="xs:integer"/>
+																						<xs:element name="ModifiedBy" type="xs:string"/>
+																						<xs:element name="PlanOfCareTypeCodeDescription" type="xs:string"/>
+																						<xs:element name="PlanOfCareReasonStatusDescription" type="xs:string"/>
+																						<xs:element name="Exceptions">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="Exception" minOccurs="0" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="EffectiveDate" type="xs:dateTime"/>
+																												<xs:element name="Notes" type="xs:string"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="LocationOfClaimant" type="xs:string"/>
+																						<xs:element name="ExceptionEffectiveDate" type="xs:dateTime"/>
+																						<xs:element name="DecisionCompletedBy" type="xs:string"/>
+																						<xs:element name="RecoveryExpected" type="xs:integer"/>
+																						<xs:element name="LastUpdatedDate" type="xs:dateTime"/>
+																						<xs:element name="PlanOfCareStatusCode" type="xs:integer"/>
+																						<xs:element name="PlanOfCareProviders">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="PlanOfCareProvider" minOccurs="0" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PolicyNumber" type="xs:string"/>
+																												<xs:element name="CareProviderId" type="xs:integer"/>
+																												<xs:element name="CareProviderTypeCode" type="xs:integer"/>
+																												<xs:element name="CareProviderTypeDescription" type="xs:string"/>
+																												<xs:element name="CareProviderName" type="xs:string"/>
+																												<xs:element name="CareProviderAddress1" type="xs:string"/>
+																												<xs:element name="CareProviderAddress2" type="xs:string"/>
+																												<xs:element name="CareProviderCity" type="xs:string"/>
+																												<xs:element name="CareProviderState" type="xs:string"/>
+																												<xs:element name="CareProviderZipCode" type="xs:string"/>
+																												<xs:element name="CareProviderPhone" type="xs:string"/>
+																												<xs:element name="CareProviderFax" type="xs:string"/>
+																												<xs:element name="PlanOfCareProviderTypeOtherText" type="xs:string"/>
+																												<xs:element name="PlanOfCareId" type="xs:integer"/>
+																												<xs:element name="ProviderEligibilityTypeCode" type="xs:integer"/>
+																												<xs:element name="ProviderEligibilityTypeDescription" type="xs:string"/>
+																												<xs:element name="EligibleDates" type="xs:string"/>
+																												<xs:element name="BenefitType" type="xs:string"/>
+																												<xs:element name="AdditionalAddress" type="xs:string"/>
+																												<xs:element name="AdditionalPhone" type="xs:string"/>
+																												<xs:element name="AdditionalFax" type="xs:string"/>
+																												<xs:element name="LicenseDocNumber" type="xs:string"/>
+																												<xs:element name="LicenseExpiration" type="xs:dateTime"/>
+																												<xs:element name="UpdProviderNumber" type="xs:integer"/>
+																												<xs:element name="CertificationEffectiveDate" type="xs:dateTime"/>
+																												<xs:element name="CertificationExpirationDate" type="xs:dateTime"/>
+																												<xs:element name="ApprovedCare" type="xs:string"/>
+																												<xs:element name="ContractedAgency" type="xs:string"/>
+																												<xs:element name="ContractedProviderEffectiveDate" type="xs:string"/>
+																												<xs:element name="ApprovedCareRate" type="xs:string"/>
+																												<xs:element name="RateFrequency" type="xs:string"/>
+																												<xs:element name="RateStatus" type="xs:string"/>
+																												<xs:element name="Indemnity" type="xs:string"/>
+																												<xs:element name="PlanOfCareProviderFrequencyTypeCode" type="xs:string"/>
+																												<xs:element name="PlanOfCareProviderFrequencyTypeDescription" type="xs:string"/>
+																												<xs:element name="FrequencyAdditionalDescription" type="xs:string"/>
+																												<xs:element name="ProviderVerification" type="xs:string"/>
+																												<xs:element name="VerificationDate" type="xs:dateTime"/>
+																												<xs:element name="RoomNumber" type="xs:string"/>
+																												<xs:element name="RoomDescription" type="xs:string"/>
+																												<xs:element name="PlanOfCareProviderProviderTypeOtherText" type="xs:string"/>
+																												<xs:element name="ProviderBenefitTypes">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="ProviderBenefitType" minOccurs="0" maxOccurs="unbounded">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="PolicyNumber" type="xs:string"/>
+																																		<xs:element name="ProviderBenefitTypeId" type="xs:integer"/>
+																																		<xs:element name="CareProviderId" type="xs:integer"/>
+																																		<xs:element name="ProviderBenefitTypeCode" type="xs:integer"/>
+																																		<xs:element name="ProviderBenefitTypeCodeDescription" type="xs:string"/>
+																																		<xs:element name="ProviderBenefitTypeOtherText" type="xs:string"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																												<xs:element name="ProviderCares">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="ProviderCare" minOccurs="0" maxOccurs="unbounded">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="PolicyNumber" type="xs:string"/>
+																																		<xs:element name="ProviderCareId" type="xs:integer"/>
+																																		<xs:element name="ProviderCareTypeCode" type="xs:integer"/>
+																																		<xs:element name="ProviderCareTypeCodeDescription" type="xs:string"/>
+																																		<xs:element name="CareProviderId" type="xs:integer"/>
+																																		<xs:element name="ProviderCareTypeOtherText" type="xs:string"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																												<xs:element name="PlanOfCareProviderServiceDates">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="PlanOfCareProviderServiceDate" minOccurs="0" maxOccurs="unbounded">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="PolicyNumber" type="xs:string"/>
+																																		<xs:element name="PlanOfCareProviderServiceStartDate" type="xs:dateTime"/>
+																																		<xs:element name="PlanOfCareProviderServiceEndDate" type="xs:dateTime"/>
+																																		<xs:element name="PlanOfCareProviderServiceDateId" type="xs:integer"/>
+																																		<xs:element name="CareProviderId" type="xs:integer"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="PlanOfCareTriggers">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="PlanOfCareTrigger" minOccurs="0" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PolicyNumber" type="xs:string"/>
+																												<xs:element name="BenefitEligibilityTriggerId" type="xs:integer"/>
+																												<xs:element name="PlanOfCareTriggerId" type="xs:integer"/>
+																												<xs:element name="BenefitEligibilityTriggerCode" type="xs:integer"/>
+																												<xs:element name="PlanOfCareId" type="xs:integer"/>
+																												<xs:element name="OtherText" type="xs:string"/>
+																												<xs:element name="LastUpdatedDate" type="xs:dateTime"/>
+																												<xs:element name="LastUpdatedBy" type="xs:string"/>
+																												<xs:element name="BenefitEligibilityTriggerCodeDescription" type="xs:string"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="PlanOfCareRecords">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="PlanOfCareRecord" minOccurs="0" maxOccurs="unbounded">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PolicyNumber" type="xs:string"/>
+																												<xs:element name="PlanOfCareRecordId" type="xs:integer"/>
+																												<xs:element name="PlanOfCareRecordTypeCode" type="xs:integer"/>
+																												<xs:element name="PlanOfCareRecordTypeCodeDescription" type="xs:string"/>
+																												<xs:element name="Description" type="xs:string"/>
+																												<xs:element name="PlanOfCareRecordDetails">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="PlanOfCareRecordDetail" minOccurs="0" maxOccurs="unbounded">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="PlanOfCareRecordDetailId" type="xs:integer"/>
+																																		<xs:element name="PlanOfCareRecordDetailTypeCode" type="xs:integer"/>
+																																		<xs:element name="PlanOfCareRecordDetailTypeCodeDescription" type="xs:string"/>
+																																		<xs:element name="Description" type="xs:string"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="BenefitEligibilityTriggers">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="BenefitEligibilityTrigger" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="EligibilityCondition" type="xs:string"/>
+																						<xs:element name="EligibilityConditionMet" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="ActivitiesOfDailyLiving">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="EpisodeOfBenefitActivityOfDailyLiving" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="ADL" type="xs:string"/>
+																						<xs:element name="QualifyingAdl" type="xs:string"/>
+																						<xs:element name="LevelOfAssistanceRequired" type="xs:string"/>
+																						<xs:element name="DependencyLevel" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="MedicallynecessaryCares">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="MedicallynecessaryCare" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="MedicallyNecessaryCareText" type="xs:string"/>
+																						<xs:element name="AssistanceNeeded" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="HomemakerServices">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="HomemakerService" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="IADL" type="xs:string"/>
+																						<xs:element name="AssistanceNeeded" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Policy">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="SeriesId" type="xs:int"/>
+										<xs:element name="CertNo" type="xs:string"/>
+										<xs:element name="PolicyNumberDescription" type="xs:string"/>
+										<xs:element name="PolicyNumber" type="xs:string"/>
+										<xs:element name="PolicyId" type="xs:unsignedInt"/>
+										<xs:element name="OriginalEffectiveDate" type="xs:dateTime"/>
+										<xs:element name="RINCOfferCoverage_PBEffectiveDate" type="xs:dateTime"/>
+										<xs:element name="POLICYLM_Amount" type="xs:string"/>
+										<xs:element name="POLICYLM_RBO_CS_Amount" type="xs:string"/>
+										<xs:element name="POLICYLM_RBO_LS_Amount" type="xs:string"/>
+										<xs:element name="POLICYLM_RBO_LTM_Amount" type="xs:string"/>
+										<xs:element name="POLICYLM_RBO_DBA_Amount" type="xs:string"/>
+										<xs:element name="POLICYLM_RBO_EP_Amount" type="xs:string"/>
+										<xs:element name="POLICYLM_RBO_INFLDROP_Amount" type="xs:string"/>
+										<xs:element name="EP_RBO_CS_Amount" type="xs:string"/>
+										<xs:element name="EP_RBO_LS_Amount" type="xs:string"/>
+										<xs:element name="EP_RBO_LTM_Amount" type="xs:string"/>
+										<xs:element name="EP_RBO_DBA_Amount" type="xs:string"/>
+										<xs:element name="EP_RBO_EP_Amount" type="xs:string"/>
+										<xs:element name="EP_RBO_INFLDROP_Amount" type="xs:string"/>
+										<xs:element name="Mutiple_RBO_CS_Amount" type="xs:string"/>
+										<xs:element name="Mutiple_RBO_LS_Amount" type="xs:string"/>
+										<xs:element name="Mutiple_RBO_LTM_Amount" type="xs:string"/>
+										<xs:element name="Mutiple_RBO_DBA_Amount" type="xs:string"/>
+										<xs:element name="Mutiple_RBO_EP_Amount" type="xs:string"/>
+										<xs:element name="Mutiple_RBO_INFLDROP_Amount" type="xs:string"/>
+										<xs:element name="SBIO_RBO_COSTSHARING_Amount" type="xs:string"/>
+										<xs:element name="SBIO_RBO_LANDINGSPOT_Amount" type="xs:string"/>
+										<xs:element name="SBIO_RBO_LTM_Amount" type="xs:string"/>
+										<xs:element name="SBIO_RBO_DBA_Amount" type="xs:string"/>
+										<xs:element name="SBIO_RBO_EP_Amount" type="xs:string"/>
+										<xs:element name="SBIO_RBO_INFLDROP_Amount" type="xs:string"/>
+										<xs:element name="SBIO_RBO_COSTSHARING_Desc" type="xs:string"/>
+										<xs:element name="SBIO_RBO_LANDINGSPOT_Desc" type="xs:string"/>
+										<xs:element name="SBIO_RBO_LTM_Desc" type="xs:string"/>
+										<xs:element name="SBIO_RBO_DBA_Desc" type="xs:string"/>
+										<xs:element name="SBIO_RBO_EP_Desc" type="xs:string"/>
+										<xs:element name="SBIO_RBO_INFLDROP_Desc" type="xs:string"/>
+										<xs:element name="RBO_EP_Amount" type="xs:string"/>
+										<xs:element name="Daily_Desc" type="xs:string"/>
+										<xs:element name="Inflation_Desc" type="xs:string"/>
+										<xs:element name="POLICYLM_Desc" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Date_100" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Date_101" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Date_102" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Date_103" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Date_104" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Date_105" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Date_106" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Date_107" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Date_108" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Pct_100" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Pct_101" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Pct_102" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Pct_103" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Pct_104" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Pct_105" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Pct_106" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Pct_107" type="xs:string"/>
+										<xs:element name="ProjectedPremium_Pct_108" type="xs:string"/>
+										<xs:element name="Daily_Amount" type="xs:string"/>
+<xs:element name="Inflation_Amount" type="xs:string"/>
+<xs:element name="Inflation_Amount_OC" type="xs:string"/>
+<xs:element name="RINCOfferCoverage_PolicyBuybackAmount" type="xs:string"/>
+<xs:element name="RINC_CSTotalOfferModalPremium" type="xs:string"/>
+<xs:element name="RINC_IDTotalOfferModalPremium" type="xs:string"/>
+										<xs:element name="MasterPlanEffectiveDate" nillable="true" type="xs:dateTime"/>
+										<xs:element name="MasterPlanNumber" type="xs:string"/>
+										<xs:element name="OtherCoverage_PolicyNumber" type="xs:string"/>
+										<xs:element name="Benefit_Option_PPO" type="xs:string"/>
+										<xs:element name="MBR_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="SCBR_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="FRBR_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="WOPHC_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="WOPCB_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="JWOPR_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="SBIO_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="CBIO_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="SRCBIO_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="TBIO_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="NFBR_Unit_ModalPremium" type="xs:string"/>
+										<xs:element name="ROPD_Unit_ModalPremium" type="xs:string"/>
+										<!-- PPM 49471 - GNW FPO Letter -->
+										<xs:element name="IssueState" type="xs:string"/>
+										<xs:element name="FunctionalState" type="xs:string"/>
+										<!-- PPM 49471 - GNW FPO Letter -->
+										<xs:element name="BusinessProductGroupName" type="xs:string"/>
+										<xs:element name="IsOnWaiverOfPremium" type="xs:boolean"/>
+										<xs:element name="LitigationHoldCode" nillable="true" type="xs:short"/>
+										<xs:element name="LitigationHoldDescription" type="xs:string"/>
+										<xs:element name="RequestForBenefit" type="RequestForBenefitDto"/>
+										<xs:element name="CareProviderDetails" type="ArrayOfCareProvider"/>
+										<xs:element name="PrintText" type="PolicyPrintDetailsDto"/>
+										<xs:element name="HasHomeHealthCare" type="xs:boolean"/>
+										<xs:element name="HasAssistedLiving" type="xs:boolean"/>
+										<xs:element name="HasWopEnhancement" type="xs:boolean"/>
+										<xs:element name="PlanTypeReference" type="xs:string"/>
+										<xs:element name="OfferCoverage_TotalOfferModalPremium" type="xs:string"/>
+										<xs:element name="GPO15_TotalOfferModalPremium" type="xs:string"/>
+										<xs:element name="GPO30_TotalOfferModalPremium" type="xs:string"/>
+										<xs:element name="Coverage_TotalModalPremium" type="xs:string"/>
+										<xs:element name="Coverage_NHMDB_Amount" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_NHMDB_Amount_Alt_A" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_NHMDB_Amount_Alt_B" type="xs:string"/>
+										<xs:element name="PolicyResidenceState" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_CBUL_Eligible" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_CS_Percentage" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_CCCS_Percentage" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_CICS_Percentage" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_RCCS_Percentage" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_RICS_Percentage" type="xs:string"/>
+                                        <xs:element name="RINCOfferCoverage_Benefit_Limit" type="xs:string"/>
+                                        <xs:element name="RINCOfferCoverage_Rate_Years" type="xs:string"/>
+										<xs:element name="Resol_Coverage_Payer_ModalType" type="xs:string"/>
+										<xs:element name="Phase2_Old_Modal_Premium" type="xs:string"/>
+										<xs:element name="Phased_Language" type="xs:string"/>
+										<xs:element name="Phased_Language_TA" type="xs:string"/>
+										<xs:element name="Is_Last_Phase" type="xs:string"/>
+										<xs:element name="ICNFLifemax" type="xs:string"/>
+										<xs:element name="TerminationBuyoutAmt" type="xs:string"/>
+										<xs:element name="Description_NHMDB" type="xs:string"/>
+										<xs:element name="Description_HHCMDB" type="xs:string"/>
+										<xs:element name="Coverages">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Coverage">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="CertId" type="xs:int"/>
+																<xs:element name="SeriesId" type="xs:int"/>
+																<xs:element name="CertNo" type="xs:string"/>
+																<xs:element name="FormId" type="xs:int"/>
+																<xs:element name="RetainedMaximumDailyBenefit" type="xs:decimal"/>
+																<xs:element name="ProductPackageId" type="xs:int"/>
+																<xs:element name="RatedMaximumDailyBenefit" type="xs:decimal"/>
+																<xs:element name="RatedEliminationPeriod" type="xs:int"/>
+																<xs:element name="RatedLifetimeMaximum" type="xs:decimal"/>
+																<xs:element name="RatedAge" type="xs:int"/>
+																<xs:element name="RateEffectiveDate" type="xs:dateTime"/>
+																<xs:element name="ReissueCertificateId" type="xs:int"/>
+																<xs:element name="JointApplicationCertId" type="xs:int"/>
+																<xs:element name="RootApplicationCertificateId" type="xs:int"/>
+																<xs:element name="StatusCode" type="xs:int"/>
+																<xs:element name="StatusDescription" type="xs:string"/>
+																<xs:element name="StatusDate" type="xs:dateTime"/>
+																<xs:element name="StatusReasonCode" type="xs:int"/>
+																<xs:element name="StatusReasonDescription" type="xs:string"/>
+																<xs:element name="TerminationStatusReasonCode" type="xs:string"/>
+																<xs:element name="TerminationStatusReasonDescription" type="xs:string"/>
+																<xs:element name="PurchaseTypeCode" type="xs:int"/>
+																<xs:element name="ApplicationEffectiveOpenDate" type="xs:dateTime"/>
+																<xs:element name="ApplicationSignatureDate" type="xs:dateTime"/>
+																<xs:element name="ApplicationReceiveDate" type="xs:dateTime"/>
+																<xs:element name="EffectiveDate" type="xs:dateTime"/>
+																<xs:element name="ExpirationDate" type="xs:dateTime"/>
+																<xs:element name="JointApplicationFlag" type="xs:boolean"/>
+																<xs:element name="ChangeFromApplicationFlag" type="xs:boolean"/>
+																<xs:element name="CashWithApplicationReferenceId" type="xs:string"/>
+																<xs:element name="StatisticalStartDate" type="xs:dateTime"/>
+																<xs:element name="BaseAnnualPremium" type="xs:decimal"/>
+																<xs:element name="BenefitIncreaseOfferId" type="xs:int"/>
+																<xs:element name="DocumentId" type="xs:int"/>
+																<xs:element name="BaseMaximumDailyBenefit" type="xs:decimal"/>
+																<xs:element name="BaseLifetimeMaximum" type="xs:decimal"/>
+																<xs:element name="PremiumCreditCertificateid" type="xs:int"/>
+																<xs:element name="BaseFactor" type="xs:decimal"/>
+																<xs:element name="DeliveryAcknowledgementDate" type="xs:dateTime"/>
+																<xs:element name="IssueDate" type="xs:dateTime"/>
+																<xs:element name="RatedAgeOverrideDate" type="xs:dateTime"/>
+																<xs:element name="ReinstatementCollectToDate" type="xs:dateTime"/>
+																<xs:element name="ParentCertificateId" type="xs:int"/>
+																<xs:element name="ApplicationSignState" type="xs:dateTime"/>
+																<xs:element name="AmendmentReceiveDate" type="xs:dateTime"/>
+																<xs:element name="RetainedLifetimeMaximum" type="xs:decimal"/>
+																<xs:element name="CoverageExchangeTypeCode" type="xs:int"/>
+																<xs:element name="ProductPackageDescription" type="xs:string"/>
+																<xs:element name="PlanName" type="xs:string"/>
+																<xs:element name="PartnershipFlag" type="xs:boolean"/>
+																<xs:element name="PlanTaxCode" type="xs:string"/>
+																<xs:element name="PlanTaxDescription" type="xs:string"/>
+																<xs:element name="BenefitsAsOfDate" type="xs:dateTime"/>
+																<xs:element name="OldEffectiveDate" type="xs:dateTime"/>
+																<xs:element name="CurrentBenefitPeriod" type="xs:string"/>
+																<xs:element name="TotalAnnualPremium" type="xs:string"/>
+																<xs:element name="TotalModalPremium" type="xs:string"/>
+																<xs:element name="Riders">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="Rider">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="RiderCertificateId" type="xs:int"/>
+																						<xs:element name="RiderSeriesId" type="xs:int"/>
+																						<xs:element name="RiderCertNo" type="xs:string"/>
+																						<xs:element name="RiderFormId" type="xs:int"/>
+																						<xs:element name="RiderRetainedMaximumDailyBenefit" type="xs:decimal"/>
+																						<xs:element name="RiderProductPackageId" type="xs:int"/>
+																						<xs:element name="RiderRatedMaximumDailyBenefit" type="xs:decimal"/>
+																						<xs:element name="RiderRatedEliminationPeriod" type="xs:int"/>
+																						<xs:element name="RiderRatedLifetimeMaximum" type="xs:decimal"/>
+																						<xs:element name="RiderRatedAge" type="xs:int"/>
+																						<xs:element name="RiderRateEffectiveDate" type="xs:dateTime"/>
+																						<xs:element name="RiderReissueCertificateId" type="xs:int"/>
+																						<xs:element name="RiderJointApplicationCertId" type="xs:int"/>
+																						<xs:element name="RiderRootApplicationCertificateId" type="xs:int"/>
+																						<xs:element name="RiderStatusCode" type="xs:int"/>
+																						<xs:element name="RiderStatusDescription" type="xs:string"/>
+																						<xs:element name="RiderStatusDate" type="xs:dateTime"/>
+																						<xs:element name="RiderStatusReasonCode" type="xs:int"/>
+																						<xs:element name="RiderStatusReasonDescription" type="xs:string"/>
+																						<xs:element name="RiderPurchaseTypeCode" type="xs:int"/>
+																						<xs:element name="RiderApplicationEffectiveOpenDate" type="xs:dateTime"/>
+																						<xs:element name="RiderApplicationSignatureDate" type="xs:dateTime"/>
+																						<xs:element name="RiderApplicationReceiveDate" type="xs:dateTime"/>
+																						<xs:element name="RiderEffectiveDate" type="xs:dateTime"/>
+																						<xs:element name="RiderExpirationDate" type="xs:dateTime"/>
+																						<xs:element name="RiderJointApplicationFlag" type="xs:boolean"/>
+																						<xs:element name="RiderChangeFromApplicationFlag" type="xs:boolean"/>
+																						<xs:element name="RiderCashWithApplicationReferenceId" type="xs:string"/>
+																						<xs:element name="RiderStatisticalStartDate" type="xs:dateTime"/>
+																						<xs:element name="RiderBaseAnnualPremium" type="xs:decimal"/>
+																						<xs:element name="RiderBenefitIncreaseOfferId" type="xs:int"/>
+																						<xs:element name="RiderDocumentId" type="xs:int"/>
+																						<xs:element name="RiderBaseMaximumDailyBenefit" type="xs:decimal"/>
+																						<xs:element name="RiderBaseLifetimeMaximum" type="xs:decimal"/>
+																						<xs:element name="RiderPremiumCreditCertificateid" type="xs:int"/>
+																						<xs:element name="RiderBaseFactor" type="xs:decimal"/>
+																						<xs:element name="RiderDeliveryAcknowledgementDate" type="xs:dateTime"/>
+																						<xs:element name="RiderIssueDate" type="xs:dateTime"/>
+																						<xs:element name="RiderRatedAgeOverrideDate" type="xs:dateTime"/>
+																						<xs:element name="RiderReinstatementCollectToDate" type="xs:dateTime"/>
+																						<xs:element name="RiderParentCertificateId" type="xs:int"/>
+																						<xs:element name="RiderApplicationSignState" type="xs:dateTime"/>
+																						<xs:element name="RiderAmendmentReceiveDate" type="xs:dateTime"/>
+																						<xs:element name="RiderRetainedLifetimeMaximum" type="xs:decimal"/>
+																						<xs:element name="RiderCoverageExchangeTypeCode" type="xs:int"/>
+																						<xs:element name="RiderProductPackageDescription" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="BenefitPools">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="PolicyNumber" type="xs:string"/>
+																			<xs:element name="Count" type="xs:int"/>
+																			<xs:element name="BenefitPool">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="PoolNumber" type="xs:int"/>
+																						<xs:element name="Balance" type="xs:decimal"/>
+																						<xs:element name="ScheduleOfBenefitsAreas">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="ScheduleOfBenefitsArea">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PoolNumber" type="xs:int"/>
+																												<xs:element name="SBPAreaPrintTag" type="xs:string"/>
+																												<xs:element name="SBPAreaPrintText" type="xs:string"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="UnitGroupings">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="UnitGrouping">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="CoverageUnit">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="PolicyNumber" type="xs:string"/>
+																									<xs:element name="UnitGroupingName" type="xs:string"/>
+																									<xs:element name="ProductType" type="xs:string"/>
+																									<xs:element name="ProductTypeCode" type="xs:string"/>
+																									<xs:element name="Description" type="xs:string"/>
+																									<xs:element name="Reference" type="xs:string"/>
+																									<xs:element name="ModalPremium" type="xs:decimal"/>
+																									<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="CoveragePremium">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="PolicyNumber" type="xs:string"/>
+																			<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																			<xs:element name="Name" type="xs:string"/>
+																			<xs:element name="GroupingID" type="xs:decimal"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="Payers">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="Payer">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="PayerID" type="xs:int"/>
+																						<xs:element name="Type" type="xs:string"/>
+																						<xs:element name="PaymentType" type="xs:string"/>
+																						<xs:element name="ModalType" type="xs:string"/>
+																						<xs:element name="BillsPerYear" type="xs:int"/>
+																						<xs:element name="PremiumGrouping">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="PolicyNumber" type="xs:string"/>
+																									<xs:element name="PayerID" type="xs:int"/>
+																									<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																									<xs:element name="ModalPremium" type="xs:decimal"/>
+																									<xs:element name="Name" type="xs:string"/>
+																									<xs:element name="GroupingID" type="xs:decimal"/>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="ProjectedPremiums">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="ProjectedPremium">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="PayerID" type="xs:int"/>
+																												<xs:element name="Sequence" type="xs:int"/>
+																												<xs:element name="Label" type="xs:string"/>
+																												<xs:element name="EffectiveDate" type="xs:dateTime"/>
+																												<xs:element name="ModalPremium" type="xs:decimal"/>
+																												<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Resolicitation">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ResolicitationCoverages">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="ResolicitationCoverage">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="EffectiveDate" type="xs:dateTime"/>
+																			<xs:element name="TotalAnnualizedPremium" type="xs:string"/>
+																			<xs:element name="TotalModalPremium" type="xs:string"/>
+																			<xs:element name="ResolicitationBenefitPools">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="Count" type="xs:string"/>
+																						<xs:element name="ResolicitationBenefitPool">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="ParentPoolOptionID" type="xs:int"/>
+																									<xs:element name="PoolOptionID" type="xs:int"/>
+																									<xs:element name="PoolNumber" type="xs:string"/>
+																									<xs:element name="PoolTypeCode" type="xs:int"/>
+																									<xs:element name="PoolDescription" type="xs:string"/>
+																									<xs:element name="FacilityMDBDescription" type="xs:string"/>
+																									<xs:element name="HomeCareMDBDescription" type="xs:string"/>
+																									<xs:element name="EPDescription" type="xs:string"/>
+																									<xs:element name="MaxBenefitDescription" type="xs:string"/>
+																									<xs:element name="BenefitInflationDescription" type="xs:string"/>
+																									<xs:element name="AttainedDescription" type="xs:string"/>
+																									<xs:element name="AttainedUnitDescription" type="xs:string"/>
+																									<xs:element name="AttainedMaxDescription" type="xs:string"/>
+																									<xs:element name="ResolicitationBenefitPoolPayers">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="ResolicitationBenefitPoolPayer">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="Type" type="xs:string"/>
+																															<xs:element name="PaymentType" type="xs:string"/>
+																															<xs:element name="ModalType" type="xs:string"/>
+																															<xs:element name="BillsPerYear" type="xs:int"/>
+																															<xs:element name="ResolicitationBenefitPoolPayerPremiumGrouping">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																																		<xs:element name="ModalPremium" type="xs:decimal"/>
+																																		<xs:element name="Name" type="xs:string"/>
+																																		<xs:element name="GroupingID" type="xs:decimal"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																															<xs:element name="ResolicitationBenefitPoolPayerProjectedPremiums">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="ResolicitationBenefitPoolPayerProjectedPremium">
+																																			<xs:complexType>
+																																				<xs:sequence>
+																																					<xs:element name="Sequence" type="xs:int"/>
+																																					<xs:element name="Label" type="xs:string"/>
+																																					<xs:element name="EffectiveDate" type="xs:dateTime"/>
+																																					<xs:element name="ModalPremium" type="xs:decimal"/>
+																																					<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																																				</xs:sequence>
+																																			</xs:complexType>
+																																		</xs:element>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																									<xs:element name="ResolicitationBenefitPoolBenefits">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="ResolicitationBenefitPoolBenefit">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="BenefitLimitOptionID" type="xs:string"/>
+																															<xs:element name="Type" type="xs:string"/>
+																															<xs:element name="Code" type="xs:string"/>
+																															<xs:element name="Frequency" type="xs:string"/>
+																															<xs:element name="AmountType" type="xs:string"/>
+																															<xs:element name="OptionReference" type="xs:string"/>
+																															<xs:element name="LimitAmount" type="xs:decimal"/>
+																															<xs:element name="ResolicitationBenefitPoolBenefitPresentation">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="Area" type="xs:string"/>
+																																		<xs:element name="Description" type="xs:string"/>
+																																		<xs:element name="Amount" type="xs:string"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																															<xs:element name="ResolicitationBenefitPoolBenefitAttributes">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="quantifier" type="xs:string"/>
+																																		<xs:element name="parameter" type="xs:string"/>
+																																		<xs:element name="type" type="xs:string"/>
+																																		<xs:element name="code" type="xs:string"/>
+																																		<xs:element name="set" type="xs:string"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="ResolicitationCoverageCoveragePremium">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																						<xs:element name="Name" type="xs:string"/>
+																						<xs:element name="GroupingID" type="xs:decimal"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="ResolicitationCoveragePayers">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="ResolicitationCoveragePayer">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="Type" type="xs:string"/>
+																									<xs:element name="PaymentType" type="xs:string"/>
+																									<xs:element name="ModalType" type="xs:string"/>
+																									<xs:element name="BillsPerYear" type="xs:int"/>
+																									<xs:element name="ResolicitationCoveragePayerPremiumGrouping">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																												<xs:element name="ModalPremium" type="xs:decimal"/>
+																												<xs:element name="Name" type="xs:string"/>
+																												<xs:element name="GroupingID" type="xs:decimal"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																									<xs:element name="ResolicitationCoveragePayerProjectedPremiums">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="ResolicitationCoveragePayerProjectedPremium">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="Sequence" type="xs:int"/>
+																															<xs:element name="Label" type="xs:string"/>
+																															<xs:element name="EffectiveDate" type="xs:dateTime"/>
+																															<xs:element name="ModalPremium" type="xs:decimal"/>
+																															<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="OfferCoverages">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="OfferCoverage">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="PolicyNumber" type="xs:string"/>
+																			<xs:element name="Description" type="xs:string"/>
+																			<xs:element name="EffectiveDate" type="xs:dateTime"/>
+																			<xs:element name="Status" type="xs:string"/>
+																			<xs:element name="Type" type="xs:string"/>
+																			<xs:element name="Offer_Coverage_Tag_RBO_LTM" type="xs:string"/>
+																			<xs:element name="Offer_Coverage_Tag_RBO_CS" type="xs:string"/>
+																			<xs:element name="Offer_Coverage_Tag_RBO_DBA" type="xs:string"/>
+																			<xs:element name="Offer_Coverage_Tag_RBO_LANDINGSPOT" type="xs:string"/>
+																			<xs:element name="Offer_Coverage_Tag_RBO_INFLDROP" type="xs:string"/>
+																			<xs:element name="Offer_Coverage_Tag_RBO_EP" type="xs:string"/>
+																			<xs:element name="OfferCoverageTags">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="Tag" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="OfferOrder" type="xs:int"/>
+																			<xs:element name="BasePremiumChangePct" type="xs:int"/>
+																			<xs:element name="BenefitIncreasePct" type="xs:int"/>
+																			<xs:element name="OfferAcceptanceDueDate" type="xs:dateTime"/>
+																			<xs:element name="OfferGenerationDate" type="xs:dateTime"/>
+																			<xs:element name="TotalCurrentModalPremium" type="xs:string"/>
+																			<xs:element name="TotalOfferModalPremium" type="xs:string"/>
+																			<xs:element name="TotalDeltaModalPremium" type="xs:string"/>
+																			<xs:element name="TotalOfferAnnualizedPremium" type="xs:string"/>
+																			<xs:element name="TotalDeltaAnnualizedPremium" type="xs:string"/>
+																			<xs:element name="OfferCoverageBenefitPools">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="Count" type="xs:int"/>
+																						<xs:element name="OfferCoverageBenefitPool">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="PoolOptionID" type="xs:int"/>
+																									<xs:element name="ParentPoolOptionID" type="xs:int"/>
+																									<xs:element name="PoolNumber" type="xs:int"/>
+																									<xs:element name="PoolTypeCode" type="xs:int"/>
+																									<xs:element name="PoolDescription" type="xs:string"/>
+																									<xs:element name="FacilityMDBDescription" type="xs:string"/>
+																									<xs:element name="HomeCareMDBDescription" type="xs:string"/>
+																									<xs:element name="EPDescription" type="xs:string"/>
+																									<xs:element name="MaxBenefitDescription" type="xs:string"/>
+																									<xs:element name="BenefitInflationDescription" type="xs:string"/>
+																									<xs:element name="AttainedUnitDescription" type="xs:string"/>
+																									<xs:element name="AttainedUnitDeltaDescription" type="xs:string"/>
+																									<xs:element name="AttainedMaxDescription" type="xs:string"/>
+																									<xs:element name="AttainedMaxDeltaDescription" type="xs:string"/>
+																									<xs:element name="OfferCoverageBenefitPoolPayers">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="OfferCoverageBenefitPoolPayer">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="Type" type="xs:string"/>
+																															<xs:element name="PaymentType" type="xs:string"/>
+																															<xs:element name="ModalType" type="xs:string"/>
+																															<xs:element name="BillsPerYear" type="xs:int"/>
+																															<xs:element name="OfferCoverageBenefitPoolPayerPremiumGrouping">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																																		<xs:element name="ModalPremium" type="xs:decimal"/>
+																																		<xs:element name="Name" type="xs:string"/>
+																																		<xs:element name="GroupingID" type="xs:decimal"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																															<xs:element name="OfferCoverageBenefitPoolPayerProjectedPremiums">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="OfferCoverageBenefitPoolPayerProjectedPremium">
+																																			<xs:complexType>
+																																				<xs:sequence>
+																																					<xs:element name="Sequence" type="xs:int"/>
+																																					<xs:element name="Label" type="xs:string"/>
+																																					<xs:element name="EffectiveDate" type="xs:dateTime"/>
+																																					<xs:element name="ModalPremium" type="xs:decimal"/>
+																																					<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																																				</xs:sequence>
+																																			</xs:complexType>
+																																		</xs:element>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																									<xs:element name="OfferCoverageBenefitPoolBenefits">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="OfferCoverageBenefitPoolBenefit">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="CurrentCoverageBenefitLimitOptionId" type="xs:string"/>
+																															<xs:element name="BenefitLimitOptionID" type="xs:string"/>
+																															<xs:element name="Type" type="xs:string"/>
+																															<xs:element name="Code" type="xs:string"/>
+																															<xs:element name="Frequency" type="xs:string"/>
+																															<xs:element name="AmountType" type="xs:string"/>
+																															<xs:element name="OptionReference" type="xs:string"/>
+																															<xs:element name="LimitAmount" type="xs:decimal"/>
+																															<xs:element name="OfferCoverageBenefitPoolBenefitAttributes">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="quantifier" type="xs:string"/>
+																																		<xs:element name="parameter" type="xs:string"/>
+																																		<xs:element name="type" type="xs:string"/>
+																																		<xs:element name="code" type="xs:string"/>
+																																		<xs:element name="set" type="xs:string"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																															<xs:element name="OfferCoverageBenefitPoolBenefitPresentation">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="Area" type="xs:string"/>
+																																		<xs:element name="Description" type="xs:string"/>
+																																		<xs:element name="Amount" type="xs:string"/>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="OfferCoverageCoveragePremium">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="Name" type="xs:string"/>
+																						<xs:element name="GroupingID" type="xs:decimal"/>
+																						<xs:element name="OfferCoverageCoveragePremiumBasePremium">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="OfferPremium" type="xs:decimal"/>
+																									<xs:element name="CurrentPremium" type="xs:decimal"/>
+																									<xs:element name="DeltaPremium" type="xs:decimal"/>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="OfferCoverageCoveragePremiumAnnualizedPremium">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="OfferPremium" type="xs:decimal"/>
+																									<xs:element name="CurrentPremium" type="xs:decimal"/>
+																									<xs:element name="DeltaPremium" type="xs:decimal"/>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="OfferCoverageCoveragePremiumModalPremium">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="OfferPremium" type="xs:decimal"/>
+																									<xs:element name="CurrentPremium" type="xs:decimal"/>
+																									<xs:element name="DeltaPremium" type="xs:decimal"/>
+																									<xs:element name="Frequency" type="xs:string"/>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="OfferCoveragePayers">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="OfferCoveragePayer">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="Type" type="xs:string"/>
+																									<xs:element name="PaymentType" type="xs:string"/>
+																									<xs:element name="ModalType" type="xs:string"/>
+																									<xs:element name="BillsPerYear" type="xs:int"/>
+																									<xs:element name="OfferCoveragePayerPremiumGrouping">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																												<xs:element name="ModalPremium" type="xs:decimal"/>
+																												<xs:element name="Name" type="xs:string"/>
+																												<xs:element name="GroupingID" type="xs:decimal"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																									<xs:element name="OfferCoveragePayerProjectedPremiums">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="OfferCoveragePayerProjectedPremium">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="PolicyNumber" type="xs:string"/>
+																															<xs:element name="Sequence" type="xs:int"/>
+																															<xs:element name="Label" type="xs:string"/>
+																															<xs:element name="EffectiveDate" type="xs:dateTime"/>
+																															<xs:element name="ModalPremium" type="xs:decimal"/>
+																															<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																															<xs:element name="IncreaseAmount" type="xs:string"/>
+																															<xs:element name="PremiumIncreasePct" type="xs:string"/>
+																															<xs:element name="PlanStateApprovedPct" type="xs:string"/>
+																															<xs:element name="PlanStateMinPct" type="xs:string"/>
+																															<xs:element name="PlanStateMaxPct" type="xs:string"/>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="OfferCoverageAdditionalInformations">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="OfferCoverageAdditionalInformation">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="TextPrompt" type="xs:string"/>
+																									<xs:element name="Sequence" type="xs:int"/>
+																									<xs:element name="Name" type="xs:string"/>
+																									<xs:element name="Value" type="xs:string"/>
+																									<xs:element name="CharacterLimit" type="xs:int"/>
+																									<xs:element name="DataType" type="xs:string"/>
+																									<xs:element name="Required" type="xs:boolean"/>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="OfferCoverageUnitGroupings">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="OfferCoverageUnitGrouping">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="OfferCoverageUnit">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="ProductType" type="xs:string"/>
+																												<xs:element name="Code" type="xs:string"/>
+																												<xs:element name="Description" type="xs:string"/>
+																												<xs:element name="Reference" type="xs:string"/>
+																												<xs:element name="ModalPremium" type="xs:decimal"/>
+																												<xs:element name="AnnualizedPremium" type="xs:decimal"/>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="ExternalRequestDetails">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ExternalRequest" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="ExternalRequestId" type="xs:int"/>
+																<xs:element name="EpisodeOfBenefitId" type="xs:int"/>
+																<xs:element name="BusinessObjectId" type="xs:int"/>
+																<xs:element name="BusinessObjectTypeCode" type="xs:int"/>
+																<xs:element name="BusinessObjectType" type="xs:string"/>
+																<xs:element name="RequestedFromPartyId" type="xs:int"/>
+																<xs:element name="RequestedFromPartyTypeCode" type="xs:int"/>
+																<xs:element name="RequestedFromPartyType" type="xs:string"/>
+																<xs:element name="RegardingPartyId" type="xs:int"/>
+																<xs:element name="RegardingPartyTypeCode" type="xs:int"/>
+																<xs:element name="RegardingPartyType" type="xs:string"/>
+																<xs:element name="ExternalRequestTypeCode" type="xs:int"/>
+																<xs:element name="ExternalRequestType" type="xs:string"/>
+																<xs:element name="RequestInitiationDate" type="xs:dateTime"/>
+																<xs:element name="RequestStatusCode" type="xs:int"/>
+																<xs:element name="RequestStatus" type="xs:string"/>
+																<xs:element name="ExternalRequestMechanismCode" type="xs:int"/>
+																<xs:element name="ExternalRequestMechanism" type="xs:string"/>
+																<xs:element name="RequestCompletionDate" type="xs:dateTime"/>
+																<xs:element name="RequestGroupGuid" type="xs:string"/>
+																<xs:element name="ExternalRequestTypeDescription" type="xs:string"/>
+																<xs:element name="FollowUpDetails" minOccurs="0">
+																	<xs:complexType>
+																		<xs:sequence minOccurs="0">
+																			<xs:element name="FollowUp" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="RequestStatusCode" type="xs:int" minOccurs="0"/>
+																						<xs:element name="RequestStatusDisplayValue" type="xs:string" minOccurs="0"/>
+																						<xs:element name="FollowupActivityCode" type="xs:int" minOccurs="0"/>
+																						<xs:element name="FollowupActivityDisplayValue" type="xs:string" minOccurs="0"/>
+																						<xs:element name="Date" type="xs:dateTime" minOccurs="0"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="CareProviderDetails">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="CareProvider" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="CareProviderId" type="xs:int"/>
+																<xs:element name="CareProviderName" type="xs:string"/>
+																<xs:element name="CareProviderAddress1" type="xs:string"/>
+																<xs:element name="CareProviderAddress2" type="xs:string"/>
+																<xs:element name="CareProviderCity" type="xs:string"/>
+																<xs:element name="CareProviderState" type="xs:string"/>
+																<xs:element name="CareProviderZipCode" type="xs:string"/>
+																<xs:element name="CareProviderCountry" type="xs:string"/>
+																<xs:element name="CareProviderPhone" type="xs:string"/>
+																<xs:element name="CareProviderFax" type="xs:string"/>
+																<xs:element name="HealthPlanAffiliationCode" type="xs:int"/>
+																<xs:element name="ExcludeRequirementOrders" type="xs:int"/>
+																<xs:element name="IsReferral" type="xs:boolean"/>
+																<xs:element name="ReferralDate" type="xs:dateTime"/>
+																<xs:element name="CareProviderTypeCode" type="xs:string"/>
+																<xs:element name="CareProviderTypeDescription" type="xs:string"/>
+																<xs:element name="CareProviderPhysicianTypeCode" type="xs:string"/>
+																<xs:element name="CareProviderPhysicianTypeDescription" type="xs:string"/>
+																<xs:element name="CareProviderClinicName" type="xs:string"/>
+																<xs:element name="IsEligible" type="xs:boolean"/>
+																<xs:element name="CurrentReferral" type="xs:boolean"/>
+																<xs:element name="CareProviderTypeText1" type="xs:string"/>
+																<xs:element name="CareProviderTypeText2" type="xs:string"/>
+																<xs:element name="IntakeListSequence" type="xs:string"/>
+																<xs:element name="StartDate" type="xs:string"/>
+																<xs:element name="EndDate" type="xs:string"/>
+																<xs:element name="PendingRequirements" minOccurs="0" maxOccurs="1">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="PolicyNumber" type="xs:string"/>
+																			<xs:element name="CareProviderId" type="xs:int"/>
+																			<xs:element name="RequirementDescription" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="CareProviderEpisodeOfBenefitAttributeDetails">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="CareProviderEpisodeOfBenefitAttribute" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="CareProviderEpisodeOfBenefitAttributeId" type="xs:int"/>
+																						<xs:element name="CareProviderId" type="xs:int"/>
+																						<xs:element name="EpisodeOfBenefitId" type="xs:int"/>
+																						<xs:element name="CareProviderEpisodeOfBenefitAttributeCode" type="xs:int"/>
+																						<xs:element name="CareProviderEpisodeOfBenefitAttributeDescription" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="CareProviderDateDetails">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="CareProviderDates" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="CareProviderId" type="xs:int"/>
+																						<xs:element name="StartOfCareDate" type="xs:date"/>
+																						<xs:element name="EndOfCareDate" type="xs:date"/>
+																						<xs:element name="ReasonForCare" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="PrintText" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="RMIFaxOrderPrintText">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="ProgramName" type="xs:string"/>
+																<xs:element name="ReturnAddress" type="xs:string"/>
+																<xs:element name="OfficePhone" type="xs:string"/>
+																<xs:element name="CallerRepresentative" type="xs:string"/>
+																<xs:element name="PHIVerbiage" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="InvoiceStatementPrintText">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="Header" type="xs:string"/>
+																<xs:element name="ProgramName" type="xs:string"/>
+																<xs:element name="Questions" type="xs:string"/>
+																<xs:element name="ReturnAddress" type="xs:string"/>
+																<xs:element name="ImportantMessage1" type="xs:string"/>
+																<xs:element name="ImportantMessage2" type="xs:string"/>
+																<xs:element name="ImportantMessage3" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="DepartmentOfInsuranceDetails">
+														<xs:complexType>
+															<xs:sequence>
+															<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="Description" type="xs:string"/>
+																<xs:element name="Address1" type="xs:string"/>
+																<xs:element name="Address2" type="xs:string"/>
+																<xs:element name="City" type="xs:string"/>
+																<xs:element name="State" type="xs:string"/>
+																<xs:element name="Zip" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="CorrespondencePrintText">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="ProgramName" type="xs:string"/>
+																<xs:element name="CustomerServicePhoneNumber" type="xs:string"/>
+																<xs:element name="CustomerServiceHours" type="xs:string"/>
+																<xs:element name="ProgramName2" type="xs:string"/>
+																<xs:element name="ProgramName3" type="xs:string"/>
+																<xs:element name="ProgramName4" type="xs:string"/>
+																<xs:element name="ProgramName5" type="xs:string"/>
+																<xs:element name="ProgramName6" type="xs:string"/>
+																<xs:element name="FaxNumber" type="xs:string"/>
+																<xs:element name="ReturnAddress" type="xs:string"/>
+																<xs:element name="ReturnAddressHeader" type="xs:string"/>
+																<xs:element name="ReturnAddress1" type="xs:string"/>
+																<xs:element name="ReturnAddress2" type="xs:string"/>
+																<xs:element name="ReturnAddressCity" type="xs:string"/>
+																<xs:element name="ReturnAddressState" type="xs:string"/>
+																<xs:element name="ReturnAddressZip" type="xs:string"/>
+																<xs:element name="ClaimReturnAddress1" type="xs:string"/>
+																<xs:element name="ClaimReturnAddressCity" type="xs:string"/>
+																<xs:element name="ClaimReturnAddressState" type="xs:string"/>
+																<xs:element name="ClaimReturnAddressZip" type="xs:string"/>
+																<xs:element name="NonClaimFaxNumber" type="xs:string"/>
+																<xs:element name="ClaimFaxNumber" type="xs:string"/>
+																<xs:element name="ClaimEmailAddress" type="xs:string"/>
+																<xs:element name="ClaimEmail" type="xs:string"/>
+																<xs:element name="NonClaimEmailAddress" type="xs:string"/>
+																<xs:element name="NonClaimEmail" type="xs:string"/>
+																<xs:element name="TopLevelGroupReference" type="xs:string"/>
+																<xs:element name="URL" type="xs:string"/>
+																<xs:element name="RateActionPhoneNumber" type="xs:string"/>
+																<xs:element name="ClaimCustomerServicePhoneNumber" type="xs:string"/>
+																<xs:element name="ClaimCustomerServiceHours" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="ScheduleOfBenefitsPagePrintText">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="ProgramName" type="xs:string"/>
+																<xs:element name="ScheduleOfBenefitsGroupName" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="BenefitAssessmentFaxOrderPrintText">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="CompanyName" type="xs:string"/>
+																<xs:element name="ReturnAddress" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="IntakeCallDetails">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="IntakeCall" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="IntakeId" type="xs:int"/>
+																<xs:element name="SeriesId" type="xs:int"/>
+																<xs:element name="CertNo" type="xs:string"/>
+																<xs:element name="DesigneeName" type="xs:string"/>
+																<xs:element name="IntakeTypeCode" type="xs:int"/>
+																<xs:element name="RequestForBenefitId" type="xs:int"/>
+																<xs:element name="ContactName" type="xs:string"/>
+																<xs:element name="CallerAuthenticationContactTypeCode" type="xs:int"/>
+																<xs:element name="ContactPhone" type="xs:string"/>
+																<xs:element name="IntentToFileClaim" type="xs:boolean"/>
+																<xs:element name="CareInPlaceWithin30Days" type="xs:boolean"/>
+																<xs:element name="CurrentResidenceCode" type="xs:int"/>
+																<xs:element name="CurrentLivingArrangementCode" type="xs:int"/>
+																<xs:element name="CurrentLivingArrangementDescription" type="xs:string"/>
+																<xs:element name="IsSpouseInClaim" type="xs:boolean"/>
+																<xs:element name="ReasonForFilingClaim" type="xs:string"/>
+																<xs:element name="ConditionOccurenceDate" type="xs:string"/>
+																<xs:element name="OtherHealthConditions" type="xs:string"/>
+																<xs:element name="IsContestable" type="xs:boolean"/>
+																<xs:element name="CallDate" type="xs:date"/>
+																<xs:element name="HasInjuryOrFall" type="xs:boolean"/>
+																<xs:element name="IsCurrentIntake" type="xs:boolean"/>
+																<xs:element name="CurrentLivingArrangementText" type="xs:string"/>
+																<xs:element name="CurrentResidenceText1" type="xs:string"/>
+																<xs:element name="CurrentResidenceText2" type="xs:string"/>
+																<xs:element name="SpouseInClaimText" type="xs:string"/>
+																<xs:element name="IntakeInjuryDetails">
+																	<xs:complexType>
+																		<xs:sequence minOccurs="0">
+																			<xs:element name="IntakeInjuryDetail" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="IntakeInjuryDetailId" type="xs:int"/>
+																						<xs:element name="IntakeCallId" type="xs:int"/>
+																						<xs:element name="InjuryTypeDescription" type="xs:string"/>
+																						<xs:element name="InjuryDate" type="xs:string"/>
+																						<xs:element name="InjuryDescription" type="xs:string"/>
+																						<xs:element name="InjuryLocationDescription" type="xs:string"/>
+																						<xs:element name="WasExternalClaimFiled" type="xs:boolean"/>
+																						<xs:element name="ExternalClaimFiledDate" type="xs:string"/>
+																						<xs:element name="ExternalInsuranceDescription" type="xs:string"/>
+																						<xs:element name="ExternalCarrierName" type="xs:string"/>
+																						<xs:element name="ExternalCarrierAddress" type="xs:string"/>
+																						<xs:element name="ExternalCarrierContactName" type="xs:string"/>
+																						<xs:element name="ExternalPolicyNumber" type="xs:string"/>
+																						<xs:element name="HasAttorneyRepresentation" type="xs:boolean"/>
+																						<xs:element name="AttorneyName" type="xs:string"/>
+																						<xs:element name="AttorneyPhone" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="IntakePacketInclusionDetails">
+																	<xs:complexType>
+																		<xs:sequence minOccurs="0">
+																			<xs:element name="IntakePacketInclusion" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="DisplayValue" type="xs:string"/>
+																						<xs:element name="Category" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="IntakeOtherInsuranceDetails">
+																	<xs:complexType>
+																		<xs:sequence minOccurs="0">
+																			<xs:element name="IntakeOtherInsurance" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PRIMARYPOLICYNUMBER" type="xs:string"/>
+																						<xs:element name="IntakeOtherInsuranceId" type="xs:int"/>
+																						<xs:element name="IntakeId" type="xs:int"/>
+																						<xs:element name="InsuranceTypeCode" type="xs:string"/>
+																						<xs:element name="InsuranceTypeDescription" type="xs:string"/>
+																						<xs:element name="LongTermCareTypeCode" type="xs:string"/>
+																						<xs:element name="LongTermCareTypeDescription" type="xs:string"/>
+																						<xs:element name="IsMedicarePartA" type="xs:boolean"/>
+																						<xs:element name="IsMedicarePartB" type="xs:boolean"/>
+																						<xs:element name="IsMedicarePartD" type="xs:boolean"/>
+																						<xs:element name="CarrierName" type="xs:string"/>
+																						<xs:element name="CarrierAddressLine1" type="xs:string"/>
+																						<xs:element name="CarrierAddressLine2" type="xs:string"/>
+																						<xs:element name="CarrierCity" type="xs:string"/>
+																						<xs:element name="CarrierState" type="xs:string"/>
+																						<xs:element name="CarrierZipCode" type="xs:string"/>
+																						<xs:element name="CarrierPhone" type="xs:string"/>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="GroupNumber" type="xs:string"/>
+																						<xs:element name="MemberNumber" type="xs:string"/>
+																						<xs:element name="EffectiveDate" type="xs:string"/>
+																						<xs:element name="ExpirationDate" type="xs:string"/>
+																						<xs:element name="MedicareText" type="xs:string"/>
+																						<xs:element name="OtherInsuranceText1" type="xs:string"/>
+																						<xs:element name="OtherInsuranceText2" type="xs:string"/>
+																						<xs:element name="OtherInsuranceText3" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="IntakeFormDetails">
+																	<xs:complexType>
+																		<xs:sequence minOccurs="0">
+																			<xs:element name="PolicyNumber" type="xs:string"/>
+																			<xs:element name="IadlOtherComment" type="xs:string"/>
+																			<xs:element name="CognitiveImpairmentStatus" type="xs:string"/>
+																			<xs:element name="FormalDementiaDiagnosis" type="xs:string"/>
+																			<xs:element name="FormalDementiaDiagnosisDescription" type="xs:string"/>
+																			<xs:element name="FormalDementiaDiagnosisDate" type="xs:string"/>
+																			<xs:element name="FormalTestingCompleted" type="xs:string"/>
+																			<xs:element name="LastCognitiveTestDescription" type="xs:string"/>
+																			<xs:element name="CurrentCognitiveMedications" type="xs:string"/>
+																			<xs:element name="CognitiveImpairmentStatusText" type="xs:string"/>
+																			<xs:element name="FormalDementiaDiagnosisDescriptionText" type="xs:string"/>
+																			<xs:element name="FormalTestingCompletedText" type="xs:string"/>
+																			<xs:element name="OtherInsuranceText" type="xs:string"/>
+																			<xs:element name="IntakeInjuryDetailText" type="xs:string"/>
+																			<xs:element name="DefaultMedicareText" type="xs:string"/>
+																			<xs:element name="DefaultOtherInsuranceText1" type="xs:string"/>
+																			<xs:element name="DefaultOtherInsuranceText2" type="xs:string"/>
+																			<xs:element name="DefaultOtherInsuranceText3" type="xs:string"/>
+																			<xs:element name="DefaultCareProviderTypeText1" type="xs:string"/>
+																			<xs:element name="DefaultCareProviderTypeText2" type="xs:string"/>
+																			<xs:element name="RecentHospitalizationText" type="xs:string"/>
+																			<xs:element name="Adl" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="Description" type="xs:string"/>
+																						<xs:element name="Level" type="xs:string"/>
+																						<xs:element name="Frequency" type="xs:string"/>
+																						<xs:element name="AssistBy" type="xs:string"/>
+																						<xs:element name="FrequencyText" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="Iadl" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="PolicyNumber" type="xs:string"/>
+																						<xs:element name="Description" type="xs:string"/>
+																						<xs:element name="AssistanceNeeded" type="xs:string"/>
+																						<xs:element name="Comment" type="xs:string"/>
+																						<xs:element name="AssistanceNeededText" type="xs:string"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="PolicyCoreBuyupCode" type="xs:string"/>
+										<xs:element name="MutliPayerFlag" type="xs:string"/>
+										<xs:element name="PartnershipFlag" type="xs:string"/>
+										<xs:element name="NationalPartnershipCode" type="xs:string"/>
+										<xs:element name="DerivedPlanType" type="xs:string"/>
+										<xs:element name="RemainingLifetimeBenefit" type="xs:string"/>
+										<xs:element name="DailyBenefitAmount" type="xs:string"/>
+										<xs:element name="OriginalIssueAge" type="xs:int"/>
+										<xs:element name="PlanNumber" type="xs:string"/>
+										<xs:element name="PlanReference" type="xs:string"/>
+										<xs:element name="NonforfeitureFlag" type="xs:int"/>
+										<xs:element name="NonforfeitureStatusDate" type="xs:dateTime"/>
+										<xs:element name="ContingentNonforfeitureStatusDate" type="xs:dateTime"/>
+										<xs:element name="LastClaimsInvoiceReceivedDate" type="xs:dateTime"/>
+										<xs:element name="NonforfeitureType" type="xs:string"/>
+										<xs:element name="PaidUpStatusFlag" type="xs:int"/>
+										<xs:element name="PremiumChangeFlag" type="xs:int"/>
+										<xs:element name="NonforfeitureAmount" type="xs:string"/>
+										<xs:element name="PaidUpStatusDate" type="xs:dateTime"/>
+										<xs:element name="MaxExpirationDate" type="xs:dateTime"/>
+										<xs:element name="IsEligibleForNonforfeiture" type="xs:string"/>
+										<xs:element name="IsEligibleForCBUL" type="xs:string"/>
+										<xs:element name="IsOnClaim" type="xs:string"/>
+										<xs:element name="InsurancePlan" type="xs:string"/>
+										<xs:element name="PolicyStatus" type="xs:string"/>
+										<xs:element name="StatusReason" type="xs:string"/>
+										<xs:element name="ProductName" type="xs:string"/>
+										<xs:element name="TopLevelGroupName" type="xs:string"/>
+										<xs:element name="PlanNo" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_PAST_RINC_INDICATOR" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_NC_Eligibility" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BasePremiumChangePct" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_ModalPremium" type="xs:decimal"/>
+										<xs:element name="RINCOfferCoverage_ModalPremium_Alt_A" type="xs:decimal"/>
+										<xs:element name="RINCOfferCoverage_ModalPremium_Alt_B" type="xs:decimal"/>
+										<xs:element name="RINCOfferCoverage_AnnualPremium" type="xs:decimal"/>
+										<xs:element name="Annual_CurrentPremium" type="xs:decimal"/>
+										<xs:element name="Annual_IncreasedPremium" type="xs:decimal"/>
+										<xs:element name="RINCOfferCoverage_BillingFrequency" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_PaymentType" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_TotalPhases" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_TotalPhases_TA" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_Years_TA" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_PhaseNumber_TA" type="xs:string"/>
+									    <xs:element name="RINCOfferCoverage_PhaseNumberCS_TA" type="xs:string"/>
+										<xs:element name="FooterFormNumber" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_ReminderLetterNumber" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_PhaseNumber" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_InsuranceGroupReference" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_LastPhaseNumber" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_EffectiveDate" type="xs:dateTime"/>
+										<xs:element name="RINCOfferCoverage_OfferAcceptanceDueDate" type="xs:dateTime"/>
+										<xs:element name="RINCOfferCoverage_PolicyLifeMax" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_NursingMax" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BenefitPeriodAmount" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BenefitPeriodDescription" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_InflationProtection" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BenefitReduction" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_OriginalLetterDate" type="xs:string"/>
+										<xs:element name="Coverage_AnnualizedPremium" type="xs:decimal"/>
+										<xs:element name="RINCOfferCoverage_Type_RBO_MDB" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_Type_RBO_BP" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_NursingMax_Alt_A" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_NursingMax_Alt_B" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BenefitPeriodAmount_Current" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BenefitPeriodDescription_Current" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BenefitPeriodAmount_Alt_A" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BenefitPeriodDescription_Alt_A" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BenefitPeriodAmount_Alt_B" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_BenefitPeriodDescription_Alt_B" type="xs:string"/>
+										<xs:element name="UnitReference_BaseCoverage" type="xs:string"/>
+										<xs:element name="Resol_BenefitPool_PoolTypeCode" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_CarveOutIndicator" type="xs:string"/>
+										<xs:element name="RateClassification" type="xs:string"/>
+										<xs:element name="LifetimeMaximumBenefitAmount" type="xs:string"/>
+										<xs:element name="EliminationPeriod" type="xs:string"/>
+										<xs:element name="TotalModalPremium" type="xs:string"/>
+										<xs:element name="ModalType" type="xs:string"/>
+										<xs:element name="RateClassificationAmount" type="xs:string"/>
+										<xs:element name="BasePolicyPremiumAnnual" type="xs:decimal"/>
+										<xs:element name="BasePolicyPremiumModal" type="xs:decimal"/>
+										<xs:element name="OptionalRidersModalPremium" type="xs:decimal"/>
+										<xs:element name="UnitAnnualizedPremium_BaseCoverage" type="xs:decimal"/>
+										<xs:element name="OfferCoverage_EffectiveDate" type="xs:dateTime"/>
+										<xs:element name="AttainedDescription" type="xs:string"/>
+										<xs:element name="AttainedUnitDescription" type="xs:string"/>
+										<xs:element name="AttainedMaxDescription" type="xs:string"/>
+										<xs:element name="AttainedUnitDescription_12" type="xs:string"/>
+										<xs:element name="AttainedUnitDescription_OfferCoverage" type="xs:string"/>
+										<xs:element name="AttainedUnitDescription_OfferCoverage2" type="xs:string"/>
+										<xs:element name="AttainedUnitDescription_OfferCoverage14" type="xs:string"/>
+										<xs:element name="AttainedMaxDescription_12" type="xs:string"/>
+										<xs:element name="AttainedMaxDescription_2" type="xs:string"/>
+										<xs:element name="AttainedMaxDescription_14" type="xs:string"/>
+										<xs:element name="OfferCoverage_AttainedUnitDeltaDescription_14" type="xs:string"/>
+										<xs:element name="OfferCoverage_AttainedMaxDeltaDescription_14" type="xs:string"/>
+										<xs:element name="OfferCoverage_TotalDeltaModalPremium_14" type="xs:string"/>
+										<xs:element name="TotalOfferModalPremium_12" type="xs:string"/>
+										<xs:element name="TotalOfferModalPremium_2" type="xs:string"/>
+										<xs:element name="TotalOfferModalPremium_14" type="xs:string"/>
+										<xs:element name="AttainedUnitDescription_11" type="xs:string"/>
+										<xs:element name="AttainedMaxDescription_11" type="xs:string"/>
+										<xs:element name="TotalOfferModalPremium_11" type="xs:string"/>
+										<xs:element name="ModalPremium_1" type="xs:string"/>
+										<xs:element name="CurrentPremium" type="xs:string"/>
+										<xs:element name="FirstPhasePercentage" type="xs:string"/>
+										<xs:element name="FirstPhasePercentage_PolicyDefault" type="xs:string"/>
+										<xs:element name="SecondPhasePercentage" type="xs:string"/>
+										<xs:element name="ThirdPhasePercentage" type="xs:string"/>
+										<xs:element name="FourthPhasePercentage" type="xs:string"/>
+										<xs:element name="FifthPhasePercentage" type="xs:string"/>
+										<xs:element name="OfferGenerationDate_Type_1" type="xs:dateTime"/>
+										<xs:element name="ModalType_Type_1" type="xs:string"/>
+										<xs:element name="ModalPremium_Type_1" type="xs:string"/>
+										<xs:element name="EffectiveDate_Type_1" type="xs:dateTime"/>
+										<xs:element name="EffectiveDate_Type_PolicyDefault" type="xs:dateTime"/>
+										<xs:element name="Payer_ModalPremium" type="xs:string"/>
+                                        <xs:element name="Payer_ModalType" type="xs:string"/>
+										<xs:element name="Payer_ModalPremium_Notype" type="xs:string"/>
+                                        <xs:element name="Payer_ModalType_Notype" type="xs:string"/>
+                                        <xs:element name="EffectiveDate_Type_14" type="xs:dateTime"/>
+										<xs:element name="OfferCoverage_Payer_ModalPremium" type="xs:string"/>
+										<xs:element name="OfferCoverage_Payer_ModalPremium1" type="xs:string"/>
+                                        <xs:element name="OfferCoverage_Payer_ModalType" type="xs:string"/>
+										<xs:element name="AttainedUnitDeltaDescription_14" type="xs:string"/>
+                                        <xs:element name="AttainedMaxDeltaDescription_14" type="xs:string"/>
+										<xs:element name="TotalDeltaModalPremium_14" type="xs:string"/>
+										<xs:element name="BenefitInflationDescription_14" type="xs:string"/>
+										<xs:element name="BenefitInflationDescription_2" type="xs:string"/>
+										<xs:element name="AttainedUnitDeltaDescription_2" type="xs:string"/>
+                                        <xs:element name="AttainedMaxDeltaDescription_2" type="xs:string"/>
+										<xs:element name="TotalDeltaModalPremium_2" type="xs:string"/>
+										<xs:element name="ABIElectionFlg" type="xs:string"/>
+										<xs:element name="RINCvalue" type="xs:string"/>
+                                        <xs:element name="EffectiveDate_Type_100" type="xs:dateTime"/>
+										<xs:element name="EffectiveDate_Type_101" type="xs:dateTime"/>
+										<xs:element name="TotalRateIncreaseCampaign" type="xs:string"/>
+										<xs:element name="TransferCreditAmount" type="xs:string"/>
+										<xs:element name="Transfercreditapplies" type="xs:string"/>
+										<xs:element name="CurrentBasePremium" type="xs:string"/>
+										<xs:element name="NewBasePremium" type="xs:string"/>
+										<xs:element name="TotalAnnualpremiumamt" type="xs:string"/>
+										<xs:element name="PremiumwithCredit" type="xs:string"/>
+										<xs:element name="Cov_TotalModalPremium" type="xs:string"/>
+										<xs:element name="Increased_Transfer_Credit" type="xs:string"/>
+										<xs:element name="TransferPremiumCreditApplied" type="xs:string"/>
+										<xs:element name="RateIncreaseStateLimitExceed" type="xs:string"/>
+										<xs:element name="PO_FirstName" type="xs:string"/>
+										<xs:element name="PO_LastName" type="xs:string"/>
+										<xs:element name="PO_MiddleInitial" type="xs:string"/>
+										<xs:element name="OC_EffectiveDate" type="xs:string"/>
+										<xs:element name="BenefitPool_MaxBenefitDescription" type="xs:string"/>
+										<xs:element name="BenefitPool_FacilityMDBDescription" type="xs:string"/>
+										<xs:element name="BenefitPool_HomeCareMDBDescription" type="xs:string"/>
+										<xs:element name="TotalAnnualizedPremiumWithoutCredit" type="xs:string"/>
+										<xs:element name="TotalOfferAnnualizedPremiumWithoutCredit" type="xs:string"/>
+										<xs:element name="TotalModalPremiumWithoutCredit" type="xs:string"/>
+										<xs:element name="TotalOfferModalPremiumWithoutCredit" type="xs:string"/>
+										<xs:element name="Current_ModalPremium" type="xs:decimal"/>
+										<xs:element name="Current_AnnualizedPremium" type="xs:decimal"/>
+										<xs:element name="ModalPremium_Payer" type="xs:string"/>
+										<xs:element name="BenefitInflationDescription_Res" type="xs:string"/>
+										<xs:element name="FacilityMDBDescription_Type55" type="xs:string"/>
+										<xs:element name="MaxBenefitDescription_Type55" type="xs:string"/>
+										<xs:element name="BuyoutAmount_Type14" type="xs:string"/>
+										<xs:element name="BuyoutAmount_Type55" type="xs:string"/>
+										<xs:element name="FacilityMDBDescription_Res" type="xs:string"/>
+										<xs:element name="BenefitPools_Count" type="xs:string"/>
+										<xs:element name="Pool_Type_Home_Care" type="xs:string"/>
+										<xs:element name="Pool_Type_Facility" type="xs:string"/>
+										<xs:element name="HomeMDBDescription_Res" type="xs:string"/>
+										<xs:element name="RINCOfferCoverage_RINC_RATE_RULE" type="xs:string"/>
+										<xs:element name="TOTAL_NUMBER_OF_PHASES" type="xs:string"/>
+										<xs:element name="OfferCoverage_ModalType" type="xs:string"/>
+										<xs:element name="OfferCoverage_ModalType_NoType" type="xs:string"/>
+										<xs:element name="RINC_TotalModalPremium" type="xs:string"/>
+										<xs:element name="RINC_TotalOfferModalPremium" type="xs:string"/>
+										<xs:element name="RBO_BM" type="xs:string"/>
+										<xs:element name="RBO_DWNGRADE" type="xs:string"/>
+										<xs:element name="RBO_MDB_REDUCTION" type="xs:string"/>
+										<xs:element name="RBO_EP" type="xs:string"/>
+										<xs:element name="RBO_BP" type="xs:string"/>
+										<xs:element name="Coverage_Frequency" type="xs:string"/>
+										<xs:element name="PoolMDB_Amount" type="xs:string"/>
+										<xs:element name="MLB_Amount" type="xs:string"/>
+										<xs:element name="COV_IPB" type="xs:string"/>
+										<xs:element name="OFF_IPB" type="xs:string"/>
+										<xs:element name="Current_Elimination_Period" type="xs:string"/>
+										<xs:element name="Offer_Elimination_Period" type="xs:string"/>
+										<xs:element name="Offer_Elimination_Period_Amt" type="xs:string"/>
+										<xs:element name="Shared_Care_Flag" type="xs:string"/>
+										<xs:element name="Notification_Days" type="xs:string"/>
+										<xs:element name="POLICY_IN_RG_PERIOD" type="xs:string"/>
+										<xs:element name="RINC_PB_MULTIPLIER_YRS" type="xs:string"/>
+										<xs:element name="RBO_BP_PB_MULTIPLIER_YRS" type="xs:string"/>
+										<xs:element name="Offer_Elimination_Period_RBO_EP" type="xs:string"/>
+										<xs:element name="Offer_Elimination_Premium_RBO_EP" type="xs:string"/>
+										<xs:element name="Current_Inflation_Protection_Prem" type="xs:string"/>
+										<xs:element name="Offer_Inflation_Protection_Prem" type="xs:string"/>
+										<xs:element name="Offer_MDB_REDUCTION_Period" type="xs:string"/>
+										<xs:element name="Offer_RBO_MDB_REDUCTION_Prem" type="xs:string"/>
+										<xs:element name="Current_Maximum_Lifetime_Benefit" type="xs:string"/>
+										<xs:element name="Offer_Maximum_Lifetime_Benefit" type="xs:string"/>
+										<xs:element name="Offer_Maximum_Lifetime_Benefit_Prem" type="xs:string"/>
+										<xs:element name="POOL_OF_DOLLARS" type="xs:string"/>
+										<xs:element name="PREMIUMPAYINGPERIOD" type="xs:string"/>
+										<xs:element name="TOTALPREMIUMINCLUDED" type="xs:string"/>
+										<xs:element name="TA_TOTALPREMIUMELECTED" type="xs:string"/>
+										<xs:element name="TOTALPREMIUMELECTED" type="xs:string"/>
+										<xs:element name="RINCOFFERCOVERAGE_BIO" type="xs:string"/>
+										<xs:element name="NEW_NHMDB" type="xs:string"/>
+										<xs:element name="NEW_HHCMDB" type="xs:string"/>
+										<xs:element name="CURRENT_NHMDB" type="xs:string"/>
+										<xs:element name="CURRENT_HHCMDB" type="xs:string"/>
+										<xs:element name="TA_TOTALPREMIUMINCLUDED" type="xs:string"/>
+										<xs:element name="TA_PREMIUMPAYINGPERIOD" type="xs:string"/>
+										<xs:element name="REDUCED_PREMIUM_RBO_LTM" type="xs:string"/>
+										<xs:element name="REDUCED_PREMIUM_RBO_CS" type="xs:string"/>
+										<xs:element name="REDUCED_PREMIUM_RBO_DBA" type="xs:string"/>
+										<xs:element name="REDUCED_PREMIUM_RBO_LANDINGSPOT" type="xs:string"/>
+										<xs:element name="REDUCED_PREMIUM_RBO_INFLDROP" type="xs:string"/>
+										<xs:element name="REDUCED_PREMIUM_RBO_EP" type="xs:string"/>
+										<xs:element name="RBO_INFL_DWNGRADE_Prem" type="xs:string"/>
+										<xs:element name="AmountUninflated_LTM" type="xs:string"/>
+										<xs:element name="AmountUninflated_LTM_RBO_BP" type="xs:string"/>
+										<xs:element name="Amount_LTM_RBO_BP" type="xs:string"/>
+										<xs:element name="TIER" type="xs:decimal"/>
+										<xs:element name="PROJECTION" type="xs:decimal"/>
+										<xs:element name="TotalTiers" type="xs:decimal"/>
+										<xs:element name="RateIncreaseCompoundedPct" type="xs:string"/>
+										<xs:element name="RateIncreaseCompoundedPctWithProjections" type="xs:string"/>
+										<xs:element name="RateIncreasePhasedStateLimitExceed" type="xs:string"/>
+										<xs:element name="ResolicitedOfferID" type="xs:string"/>
+										<xs:element name="MOO_COV_IPB" type="xs:string"/>
+										<xs:element name="MOO_OFF_IPB" type="xs:string"/>
+										<xs:element name="RINC_OfferGenerationDate" type="xs:string"/>
+										<xs:element name="MOO_Shared_Care_Flag" type="xs:string"/>
+										 <xs:element name="IRIPercent" type="xs:string"/>
+										 <xs:element name="RINCOfferCoverage_RINC_RATE_ACTION" type="xs:string"/>
+										 <xs:element name="COV_ONR" type="xs:string"/>
+										 <xs:element name="ThirdPartyLtcAdministratorName" type="xs:string"/>
+										 <xs:element name="ThirdPartyLtcAdministratorName2" type="xs:string"/>
+										 <xs:element name="ThirdPartyLtcAdministratorName_P" type="xs:string"/>
+										 <xs:element name="ThirdPartyLtcAdministratorName2_P" type="xs:string"/>
+										 <xs:element name="InflationTypeCode_Description" type="xs:string"/>
+										<xs:element name="PolicyOwner">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="FirstName" type="xs:string"/>
+													<xs:element name="LastName" type="xs:string"/>
+													<xs:element name="MiddleInitial" type="xs:string"/>
+													<xs:element name="Address1" type="xs:string"/>
+													<xs:element name="Address2" type="xs:string"/>
+													<xs:element name="Address3" type="xs:string"/>
+													<xs:element name="City" type="xs:string"/>
+													<xs:element name="State" type="xs:string"/>
+													<xs:element name="Zip" type="xs:string"/>
+													<xs:element name="Type" type="xs:string"/>
+													<xs:element name="SSN" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="IsPolicyPartnership" type="xs:boolean"/>
+										<xs:element name="NationalPartnershipStatus" type="xs:string"/>
+										<xs:element name="NationalPartnershipState" type="xs:string"/>
+										<xs:element name="AgentDetails">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Agent">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="AgentNumber" type="xs:string"/>
+																<xs:element name="AgentSaleCode" type="xs:int"/>
+																<xs:element name="AddressTypeCode" type="xs:int"/>
+																<xs:element name="FirstName" type="xs:string"/>
+																<xs:element name="MiddleName" type="xs:string"/>
+																<xs:element name="LastName" type="xs:string"/>
+																<xs:element name="Address1" type="xs:string"/>
+																<xs:element name="Address2" type="xs:string"/>
+																<xs:element name="Address3" type="xs:string"/>
+																<xs:element name="City" type="xs:string"/>
+																<xs:element name="State" type="xs:string"/>
+																<xs:element name="Zip" type="xs:string"/>
+																<xs:element name="AgentDueDate" type="xs:string"/>
+																<xs:element name="AgentCurrentBalance" type="xs:string"/>
+																
+																<xs:element name="Phone" type="xs:string"/>
+																<xs:element name="AgentSaleCodeDescription" type="xs:string"/>
+																<xs:element name="AddressTypeCodeDescription" type="xs:string"/>
+																<xs:element name="Agency" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="SalesForces">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="SalesForce">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="Address1" type="xs:string"/>
+																<xs:element name="Address2" type="xs:string"/>
+																<xs:element name="Address3" type="xs:string"/>
+																<xs:element name="City" type="xs:string"/>
+																<xs:element name="State" type="xs:string"/>
+																<xs:element name="Zip" type="xs:string"/>
+																<xs:element name="CCLetterCode" type="xs:string"/>
+																<xs:element name="Name" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Designees">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Designee">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="Type" type="xs:string"/>
+																<xs:element name="FirstName" type="xs:string"/>
+																<xs:element name="MiddleInitial" type="xs:string"/>
+																<xs:element name="LastName" type="xs:string"/>
+																<xs:element name="OrganizationName" type="xs:string"/>
+																<xs:element name="Address1" type="xs:string"/>
+																<xs:element name="Address2" type="xs:string"/>
+																<xs:element name="Address3" type="xs:string"/>
+																<xs:element name="City" type="xs:string"/>
+																<xs:element name="State" type="xs:string"/>
+																<xs:element name="Zip" type="xs:string"/>
+																<xs:element name="Phone" type="xs:string"/>
+																<xs:element name="Birthdate" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Billing">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="PolicyNumber" type="xs:string"/>
+													<xs:element name="EFTDraftDay" type="xs:string"/>
+													<xs:element name="NextBillDateAfterBillingChangeEffectiveDate" type="xs:dateTime"/>
+													<xs:element name="BillingChangeEffectiveDate" type="xs:dateTime"/>
+													<xs:element name="OldBillingFrequency" type="xs:string"/>
+													<xs:element name="BillingFrequency" type="xs:string"/>
+													<xs:element name="PastDueAmount" type="xs:decimal"/>
+													<xs:element name="PremiumDueDate" type="xs:dateTime"/>
+													<xs:element name="LastPaymentAmount" type="xs:decimal"/>
+													<xs:element name="ShortageAmount" type="xs:decimal"/>
+													<xs:element name="TotalAmountDue" type="xs:decimal"/>
+													<xs:element name="AccountId" type="xs:int"/>
+													<xs:element name="LockboxBarcode" type="xs:string"/>
+													<xs:element name="LockboxStreet1" type="xs:string"/>
+													<xs:element name="LockboxStreet2" type="xs:string"/>
+													<xs:element name="LockboxCity" type="xs:string"/>
+													<xs:element name="LockboxState" type="xs:string"/>
+													<xs:element name="LockboxZip" type="xs:string"/>
+													<xs:element name="PaidToDate" type="xs:string"/>
+													<xs:element name="AppliedPayments">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="TotalAmountApplied" type="xs:string"/>
+																<xs:element name="AppliedPayment">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="StartDate" type="xs:dateTime"/>
+																			<xs:element name="EndDate" type="xs:dateTime"/>
+																			<xs:element name="BilledAmount" type="xs:decimal"/>
+																			<xs:element name="AppliedAmount" type="xs:decimal"/>
+																			<xs:element name="AppliedDate" type="xs:dateTime"/>
+																			<xs:element name="CheckNumber" type="xs:string"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="MailingAddress" minOccurs="0">
+								<!-- populated by eLTCAS  -->
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PolicyNumber" type="xs:string"/>
+										<xs:element name="MailingFirstName" type="xs:string"/>
+										<xs:element name="MailingMiddleInitial" type="xs:string"/>
+										<xs:element name="MailingLastName" type="xs:string"/>
+										<xs:element name="MailingSalutation" type="xs:string"/>
+										<xs:element name="MailingName" type="xs:string"/>
+										<xs:element name="MailingAttentionName" type="xs:string"/>
+										<xs:element name="MailingAddress1" type="xs:string"/>
+										<xs:element name="MailingAddress2" type="xs:string"/>
+										<xs:element name="MailingCity" type="xs:string"/>
+										<xs:element name="MailingState" type="xs:string"/>
+										<xs:element name="MailingZipCode" type="xs:string"/>
+										<xs:element name="MailingSalutationName" type="xs:string"/>
+										<xs:element name="DestinationFaxNumber" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="CCMailingAddress" minOccurs="0">
+								<!-- populated by eLTCAS -->
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PolicyNumber" type="xs:string"/>
+										<xs:element name="CCMailingSalutation" type="xs:string"/>
+										<xs:element name="CCMailingName" type="xs:string"/>
+										<xs:element name="CCMailingAddress1" type="xs:string"/>
+										<xs:element name="CCMailingAddress2" type="xs:string"/>
+										<xs:element name="CCMailingCity" type="xs:string"/>
+										<xs:element name="CCMailingState" type="xs:string"/>
+										<xs:element name="CCMailingZipCode" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="PreliminaryDocumentGenerationForm">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PreliminaryConfiguration">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="PolicyNumber" type="xs:string"/>
+													<xs:element name="Carrier" type="xs:string"/>
+													<xs:element name="DomainEvent" type="xs:string"/>
+													<xs:element name="BusinessArea" type="xs:string"/>
+													<xs:element name="DecisionStart" type="xs:string"/>
+													<xs:element name="DecisionEnd" type="xs:string"/>
+													<xs:element name="DecisionVersion" type="xs:float"/>
+													<xs:element name="EventValues">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="EventValue" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="PolicyNumber" type="xs:string"/>
+																			<xs:element name="Name" type="xs:string"/>
+																			<xs:element name="Value" type="xs:string"/>
+																			<xs:element name="Description" type="xs:string"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Output">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="PolicyNumber" type="xs:string"/>
+													<xs:element name="IsLetterNeeded" type="xs:boolean"/>
+													<xs:element name="ShowDocumentSelectionScreen" type="xs:boolean"/>
+													<xs:element name="PrintPreview" type="xs:boolean"/>
+													<xs:element name="AllowPendForLater" type="xs:boolean"/>
+													<xs:element name="AllowDoNotSend" type="xs:boolean"/>
+													<xs:element name="AllowGoBack" type="xs:boolean"/>
+													<xs:element name="SuggestedPacketGroupDetails">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PolicyNumber" type="xs:string"/>
+																<xs:element name="NoPacketGroup" type="xs:boolean"/>
+																<xs:element name="SuggestedPacketGroup">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="PolicyNumber" type="xs:string"/>
+																			<xs:element name="Description" type="xs:string"/>
+																			<xs:element name="LongDescription" type="xs:string"/>
+																			<xs:element name="Sequence" type="xs:byte"/>
+																			<xs:element name="PacketDetails">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="Packet">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="PolicyNumber" type="xs:string"/>
+																									<xs:element name="RecipientType" type="xs:string"/>
+																									<xs:element name="RecipientId" type="xs:string"/>
+																									<xs:element name="Description" type="xs:string"/>
+																									<xs:element name="Sequence" type="xs:byte"/>
+																									<xs:element name="TemplateDetails">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="Template" minOccurs="0" maxOccurs="unbounded">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="PolicyNumber" type="xs:string"/>
+																															<xs:element name="Description" type="xs:string"/>
+																															<xs:element name="Sequence" type="xs:byte"/>
+																															<xs:element name="PrintOnLetterhead" type="xs:boolean"/>
+																															<xs:element name="EnclosureDescription" type="xs:string"/>
+																															<xs:element name="DocId" type="xs:string"/>
+																															<xs:element name="ActyTranCd" type="xs:string"/>
+																															<xs:element name="AdditionalInformationDetails">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="AdditionalInformation" minOccurs="0" maxOccurs="unbounded">
+																																			<xs:complexType>
+																																				<xs:sequence>
+																																					<xs:element name="PolicyNumber" type="xs:string"/>
+																																					<xs:element name="TemplateDescription" type="xs:string"/>
+																																					<xs:element name="TextPrompt" type="xs:string"/>
+																																					<xs:element name="Sequence" type="xs:byte"/>
+																																					<xs:element name="Name" type="xs:string"/>
+																																					<xs:element name="Value" type="xs:string"/>
+																																					<xs:element name="CharacterLimit" type="xs:int"/>
+																																					<xs:element name="DataType" type="xs:string"/>
+																																					<xs:element name="Required" type="xs:boolean"/>																																				
+																																				</xs:sequence>
+																																			</xs:complexType>
+																																		</xs:element>
+																																	</xs:sequence>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:complexType name="DocImage">
+			<xs:sequence>
+				<xs:element name="FileName" type="xs:string"/>
+				<xs:element name="PageCount" type="xs:int"/>
+				<xs:element minOccurs="1" maxOccurs="1" name="Base64String" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
